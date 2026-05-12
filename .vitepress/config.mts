@@ -28,7 +28,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '组件总览', link: '/components/' },
-      { text: '全流程', link: '/workflow' },
+      { text: '代码片段', link: '/snippets/' },
+      { text: '版本差异', link: '/guide/version-difference' },
       { text: '更新与发布', link: '/guide/deploy-update' },
     ],
     sidebar: [
@@ -38,19 +39,41 @@ export default defineConfig({
           { text: '首页', link: '/' },
           { text: '独立仓库全流程', link: '/workflow' },
           { text: '如何把模块加到页面', link: '/guide/common' },
+          { text: 'Slate 2.x vs 3.x 主题差异', link: '/guide/version-difference' },
         ],
       },
       {
-        text: '组件说明',
+        text: '组件说明（运营向）',
         items: [
           { text: '组件总览', link: '/components/' },
+          { text: '常见问题', link: '/components/troubleshooting' },
+        ],
+      },
+      {
+        text: 'Slate 3.x 主题（kenpogen / daramiyo / pettena-kr）',
+        collapsed: false,
+        items: [
           { text: '人气视频', link: '/components/kol-recommend' },
           { text: '红人模块（图文）', link: '/components/text-columns-renman' },
           { text: '红人模块（视频轮播）', link: '/components/text-columns-renman2' },
           { text: '产品排行榜', link: '/components/product-ranking' },
           { text: 'Tab 切换图文', link: '/components/tab-switcher' },
           { text: '图片轮播 Plus', link: '/components/image-swiper-more' },
-          { text: '常见问题', link: '/components/troubleshooting' },
+        ],
+      },
+      {
+        text: 'Slate 2.x 主题（Giipet）',
+        collapsed: true,
+        items: [
+          { text: '（暂无专属组件文档）', link: '/components/' },
+        ],
+      },
+      {
+        text: '自定义代码片段（技术向）',
+        collapsed: false,
+        items: [
+          { text: '片段总览', link: '/snippets/' },
+          { text: '新片段模板', link: '/snippets/template' },
         ],
       },
       {

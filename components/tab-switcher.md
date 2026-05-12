@@ -1,6 +1,12 @@
 # Tab 切换图文（顶部 Tab + 大图 + 3 商品卡）
 
+::: info 适用范围
+**Slate 3.x（Handlebars）** · 主题：kenpogen
+:::
+
 **适合做什么：** 顶部一排 Tab（如「新品」「热卖」「促销」），点不同 Tab 切到不同的「大图 + 介绍文字 + 3 个商品」组合，常用做首页主推位、活动专区。模块自带左右切换箭头和分页指示点，也支持自动轮播。
+
+![后台截图占位](/screenshots/tab-switcher.png)
 
 > 模块里每一个**块**就是一个 Tab。块分两种：
 > - **Tab Block**：左边大背景图 + 右边 3 个商品卡（最常用）
@@ -74,3 +80,11 @@
 | 商品卡看不到 | 检查每个商品位是否选了商品；或者你用的是 **Image Block**（本来就没有商品卡） |
 | 自动轮播不切 | 检查「启用自动轮播」是否开、间隔是不是太长 |
 | 箭头/小圆点位置怪、看不清 | 用「箭头颜色」「分页指示器颜色」改成对比明显的颜色 |
+
+## 维护者参考
+
+::: details schema / 代码位置
+- **Slate 3.x（Handlebars）** — 主题仓库内：`sections/tab-switcher/tab-switcher.html`（末尾 schema 块）+ `sections/tab-switcher/blocks/tab-block.html` + `sections/tab-switcher/blocks/image-block.html`
+- 每个 Tab Block 固定 3 商品位，无法在 schema 改成可变数量（要改需调 HTML 模板）。
+- 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
+:::

@@ -1,6 +1,12 @@
 # 人气视频（达人 / 种草视频墙）
 
+::: info 适用范围
+**Slate 3.x（Handlebars）** · 主题：daramiyo · kenpogen
+:::
+
 **适合做什么：** 一排展示多位达人：头像、昵称、短视频封面，下面带一句商品介绍，点整卡可跳到商品页。适合「Instagram 同款」「博主试穿」类内容。
+
+![后台截图占位](/screenshots/kol-recommend.png)
 
 ## 整段标题区（右侧最上面几项）
 
@@ -30,3 +36,10 @@
 - 电脑：鼠标移到卡片上会自动播视频，移开就停。
 - 手机：滑到屏幕里之后可能自动尝试播放（各手机浏览器规则略有不同）。
 - 选了 **Carousel** 布局时，电脑上才会出现左右箭头。
+
+## 维护者参考
+
+::: details schema / 代码位置
+- **Slate 3.x（Handlebars）** — 主题仓库内：`sections/kol-recommend/kol-recommend.html`（末尾 schema 块）+ `sections/kol-recommend/blocks/*.html`
+- 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
+:::

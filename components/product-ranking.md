@@ -1,6 +1,12 @@
 # 产品排行榜（Tab 切换 + 排名徽章）
 
+::: info 适用范围
+**Slate 3.x（Handlebars）** · 主题：kenpogen
+:::
+
 **适合做什么：** 把多个「分类合集」做成顶部 Tab，点哪个 Tab 显示哪一类的商品；每张商品卡左上角带 1、2、3…的排名徽章，前三名颜色加重；底部可放「查看更多」按钮跳到对应合集页。
+
+![后台截图占位](/screenshots/product-ranking.png)
 
 > 配合用法：先在后台建好 X 个**商品合集（Collection）**（例如「パンプス」「ローファー」「ブーツ」），合集里的商品顺序就是排行顺序（你把想排第一名的拖到最前）。这个模块只负责把合集**按 Tab 形式**展示出来。
 
@@ -60,3 +66,11 @@
 | Tab 滚动置顶后挡到内容 | 把「置顶距离顶部偏移」调大几十像素，或关掉「Tab 导航滚动置顶」 |
 | 电脑上想看到横滑而不是换行 | 打开「PC 端启用左右滑动」 |
 | 想去掉左上角 1、2、3 徽章 | 关掉「显示排行徽章」 |
+
+## 维护者参考
+
+::: details schema / 代码位置
+- **Slate 3.x（Handlebars）** — 主题仓库内：`sections/product-ranking/product-ranking.html`（末尾 schema 块）+ `sections/product-ranking/blocks/tab-item.html`
+- 排行顺序 = 合集（Collection）里商品的实际顺序，无独立排序字段。
+- 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
+:::

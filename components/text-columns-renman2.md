@@ -1,6 +1,12 @@
 # 红人模块（视频轮播）
 
+::: info 适用范围
+**Slate 3.x（Handlebars）** · 主题：daramiyo · kenpogen
+:::
+
 后台名称可能是 **红人模块(视频)**。和手机淘宝类似的**横滑卡片**：每张可放图，或放**店铺上传的视频 / YouTube、Vimeo 链接**。
+
+![后台截图占位](/screenshots/text-columns-renman2.png)
 
 ## 整段（分区）设置
 
@@ -44,3 +50,10 @@
 
 - 想「以视频为主」：重点填封面 + 视频文件或外链；图片可不填或作备用。
 - 自动轮播、循环若感觉没生效，多半是卡片张数太少，多添加几张再试。
+
+## 维护者参考
+
+::: details schema / 代码位置
+- **Slate 3.x（Handlebars）** — 主题仓库内：`sections/text-columns-renman2/text-columns-renman2.html`（末尾 schema 块）+ `sections/text-columns-renman2/blocks/*.html`
+- 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
+:::
