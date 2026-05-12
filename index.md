@@ -7,7 +7,7 @@ hero:
   text: 统筹所有主题的自定义组件
   tagline: 运营 / 技术 / 客户三类人，一个站点。推送即更新。
   image:
-    src: /logo.svg
+    src: /hero.svg
     alt: 主题组件配置中心
   actions:
     - theme: brand
