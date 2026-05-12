@@ -40,6 +40,7 @@
 ## 维护者参考
 
 ::: details schema / 代码位置
+
 - **Slate 3.x（Handlebars）** — 主题仓库内：`sections/kol-recommend/kol-recommend.html`（末尾 schema 块）+ `sections/kol-recommend/blocks/*.html`
 - 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
 :::

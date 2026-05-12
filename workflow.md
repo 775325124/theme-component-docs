@@ -23,6 +23,7 @@
 1. 复制 **`handbook` 整个文件夹**到本机任意位置，例如：  
    `~/项目/theme-component-docs`
 2. **不要**复制父级主题里的 `.git`。若误拷了父仓库的 `.git`，删掉，在手册目录里重新初始化：
+
    ```bash
    cd ~/项目/theme-component-docs
    rm -rf .git    # 仅当存在且是父仓库时不要误删——确认当前目录是手册根目录再执行
@@ -79,7 +80,7 @@ git push -u origin main
 
 **原则：** 代码在哪个主题仓库改，**说明以手册仓库为唯一对外出口**（避免每个主题各写一份、互相不一致）。
 
-### 每次新增一个组件，建议按顺序做：
+### 每次新增一个组件，建议按顺序做
 
 1. **登记**  
    打开手册仓库里的 `components/index.md`（组件总览表），**加一行**：  
@@ -95,18 +96,22 @@ git push -u origin main
    若希望左侧导航也出现新条目，编辑 `.vitepress/config.mts` 里 `sidebar` 对应分组，增加一条 `link`。
 
 4. **本地预览（推荐）**  
+
    ```bash
    npm install   # 第一次或依赖变更时
    npm run dev
    ```
+
    浏览器检查排版与链接。
 
 5. **发布**  
+
    ```bash
    git add .
    git commit -m "docs: add xxx component for kenpogen"
    git push
    ```
+
    等待 GitHub Actions 完成（约 1～2 分钟），刷新线上手册。
 
 6. **主题仓库侧（可选）**  

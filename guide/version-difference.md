@@ -47,6 +47,7 @@
 4. **改 HTML/Liquid** = 改前端渲染。注意两边语法不同：
 
 ::: code-group
+
 ```liquid [Slate 2.x: sections/example.liquid]
 {% if section.settings.title %}
   <h2>{{ section.settings.title }}</h2>
@@ -84,6 +85,7 @@
 }
 {{/schema}}
 ```
+
 :::
 
 <div v-pre>
@@ -91,6 +93,7 @@
 ### 跨主题移植组件
 
 把 daramiyo（3.x）的某个组件搬到 Giipet（2.x），或反向，**必须重写模板代码**。原因：
+
 - `{{#blocks}}` 在 2.x 不存在，要换成 `{% for block in section.blocks %}`
 - `{{#component "image"}}` 在 2.x 不存在，要换成 `{{ block.settings.image | img_tag }}` 或类似
 - `{{{var}}}`（不转义）换成 `{{ var }}` 或 `{{ var | raw }}`

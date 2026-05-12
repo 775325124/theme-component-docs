@@ -1,0 +1,31 @@
+// markdownlint-cli2 配置：宽松的中文文档风格
+{
+  "config": {
+    "default": true,
+    // 标题、行长度：中英混排时严格行长不实用
+    "MD013": false,
+    // 标题下不必紧跟空行（VitePress hero 等场景）
+    "MD022": false,
+    // 多 H1 在某些首页/section 索引页可能存在
+    "MD025": false,
+    // 列表风格不强制
+    "MD004": false,
+    // 允许内联 HTML（v-pre、details、code-group 等需要）
+    "MD033": false,
+    // 不强制 ordered list 顺序号
+    "MD029": false,
+    // 不要求 lang 在 fenced code（VitePress 经常用 ` ``` ` 块）
+    "MD040": false,
+    // 不要求首行是 H1
+    "MD041": false,
+    // 文件结尾换行 - 保留
+    "MD047": true
+  },
+  "ignores": [
+    "node_modules/**",
+    ".vitepress/cache/**",
+    ".vitepress/dist/**",
+    "public/**",
+    "**/CHANGELOG.md"
+  ]
+}

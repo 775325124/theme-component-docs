@@ -19,6 +19,7 @@
 
 1. 在本机复制整个 **`handbook`** 文件夹到一个新位置，例如 `~/shop-theme-handbook`（名字自定）。
 2. 在新文件夹里删掉旧的 git 记录（如果复制时带上了父仓库的 `.git` 不要删错——应只保留手册自己的）：
+
    ```bash
    cd ~/shop-theme-handbook
    rm -rf .git    # 若该文件夹里没有 .git 可忽略
@@ -26,8 +27,10 @@
    git add .
    git commit -m "init: theme component handbook"
    ```
+
 3. 在 GitHub 网页上 **New repository**，建一个空仓库（不要勾选 README），例如 `shop-theme-handbook`。
 4. 按 GitHub 提示绑定远程并推送：
+
    ```bash
    git remote add origin https://github.com/你的用户名/shop-theme-handbook.git
    git branch -M main

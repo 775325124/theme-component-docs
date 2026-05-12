@@ -5,9 +5,15 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.vitepress/cache\" \"#.vitepress/dist\" \"#public\"",
+    "lint:md:fix": "markdownlint-cli2 --fix \"**/*.md\" \"#node_modules\" \"#.vitepress/cache\" \"#.vitepress/dist\" \"#public\"",
+    "optimize:screenshots": "node scripts/optimize-screenshots.mjs",
+    "check": "npm run lint:md && npm run build"
   },
   "devDependencies": {
+    "markdownlint-cli2": "^0.13.0",
+    "sharp": "^0.33.5",
     "vitepress": "^1.6.3"
   }
 }

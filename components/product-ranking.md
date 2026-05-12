@@ -70,6 +70,7 @@
 ## 维护者参考
 
 ::: details schema / 代码位置
+
 - **Slate 3.x（Handlebars）** — 主题仓库内：`sections/product-ranking/product-ranking.html`（末尾 schema 块）+ `sections/product-ranking/blocks/tab-item.html`
 - 排行顺序 = 合集（Collection）里商品的实际顺序，无独立排序字段。
 - 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。

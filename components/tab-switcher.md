@@ -9,6 +9,7 @@
 ![后台截图占位](/screenshots/tab-switcher.png)
 
 > 模块里每一个**块**就是一个 Tab。块分两种：
+>
 > - **Tab Block**：左边大背景图 + 右边 3 个商品卡（最常用）
 > - **Image Block**：只有一张大背景图（无商品卡，纯活动入口）
 
@@ -84,6 +85,7 @@
 ## 维护者参考
 
 ::: details schema / 代码位置
+
 - **Slate 3.x（Handlebars）** — 主题仓库内：`sections/tab-switcher/tab-switcher.html`（末尾 schema 块）+ `sections/tab-switcher/blocks/tab-block.html` + `sections/tab-switcher/blocks/image-block.html`
 - 每个 Tab Block 固定 3 商品位，无法在 schema 改成可变数量（要改需调 HTML 模板）。
 - 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。

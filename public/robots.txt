@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://775325124.github.io/theme-component-docs/sitemap.xml
