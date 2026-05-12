@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  // 若部署在 GitHub Pages 项目站（地址形如 https://用户.github.io/仓库名/），把下面改成 '/仓库名/'
-  base: '/',
+  // GitHub Pages 项目站点路径：https://775325124.github.io/theme-component-docs/
+  // 若以后绑定独立域名（站点在根路径），把下面改回 '/'
+  base: '/theme-component-docs/',
   title: '主题组件配置中心',
   description: '统筹所有主题的自定义组件 · 运营向说明',
   lang: 'zh-CN',
