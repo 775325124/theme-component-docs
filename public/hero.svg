@@ -20,12 +20,7 @@
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1e1b4b" flood-opacity="0.18"/>
     </filter>
   </defs>
-
-  <!-- ÔIÌo' -->
   <circle cx="180" cy="180" r="160" fill="url(#bgGrad)"/>
-
-  <!-- Åpó
-¹5 -->
   <g fill="#7c3aed" opacity="0.55">
     <circle cx="298" cy="38" r="2.6"/>
     <circle cx="314" cy="38" r="2.6"/>
@@ -36,15 +31,8 @@
     <circle cx="314" cy="70" r="2.6"/>
     <circle cx="330" cy="70" r="2.6"/>
   </g>
-
-  <!-- Åpæ
- -->
   <path d="M 40 60 L 44 70 L 54 72 L 46 79 L 48 90 L 40 84 L 32 90 L 34 79 L 26 72 L 36 70 Z" fill="#3b82f6" opacity="0.5"/>
-
-  <!-- Åpó	Ò -->
   <path d="M 320 304 L 340 332 L 300 332 Z" fill="#ec4899" opacity="0.45"/>
-
-  <!-- ====== aG 1o ====== -->
   <g transform="translate(60 50) rotate(-8 100 55)" filter="url(#cardShadow)">
     <rect x="0" y="0" width="210" height="110" rx="13" fill="#ffffff"/>
     <rect x="14" y="14" width="48" height="48" rx="8" fill="#cffafe"/>
@@ -58,8 +46,6 @@
     <rect x="166" y="82" width="30" height="16" rx="8" fill="#94a3b8"/>
     <circle cx="176" cy="90" r="6" fill="#ffffff"/>
   </g>
-
-  <!-- ====== aG 2-o ====== -->
   <g transform="translate(95 130) rotate(3 110 60)" filter="url(#cardShadow)">
     <rect x="0" y="0" width="220" height="120" rx="14" fill="#ffffff"/>
     <rect x="14" y="14" width="54" height="54" rx="8" fill="#fae8ff"/>
@@ -73,8 +59,6 @@
     <rect x="174" y="94" width="32" height="18" rx="9" fill="#22c55e"/>
     <circle cx="197" cy="103" r="7" fill="#ffffff"/>
   </g>
-
-  <!-- ====== aG 3Mo ====== -->
   <g transform="translate(55 215) rotate(-3 120 65)" filter="url(#cardShadow)">
     <rect x="0" y="0" width="240" height="130" rx="14" fill="#ffffff"/>
     <rect x="16" y="16" width="60" height="60" rx="10" fill="#e0e7ff"/>
@@ -88,8 +72,6 @@
     <rect x="180" y="100" width="36" height="20" rx="10" fill="#2563eb"/>
     <circle cx="206" cy="110" r="8" fill="#ffffff"/>
   </g>
-
-  <!-- Åpn¨n -->
   <g transform="translate(320 200)" opacity="0.6">
     <circle cx="0" cy="0" r="14" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
     <circle cx="0" cy="0" r="5" fill="#7c3aed"/>
@@ -98,8 +80,6 @@
     <rect x="-20" y="-1.5" width="6" height="3" rx="1" fill="#7c3aed"/>
     <rect x="14" y="-1.5" width="6" height="3" rx="1" fill="#7c3aed"/>
   </g>
-
-  <!-- ÅpêIÛ’ -->
   <g transform="translate(30 280)" opacity="0.55">
     <path d="M0 -10 L2 -2 L10 0 L2 2 L0 10 L-2 2 L-10 0 L-2 -2 Z" fill="#ec4899"/>
   </g>
