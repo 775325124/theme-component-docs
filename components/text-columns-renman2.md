@@ -1,7 +1,7 @@
 # 红人模块（视频轮播）
 
 ::: info 适用范围
-**Slate 3.x（Handlebars）** · 主题：daramiyo · kenpogen
+**Shopline 3.x（Sline）** · 主题：daramiyo · kenpogen
 :::
 
 后台名称可能是 **红人模块(视频)**。和手机淘宝类似的**横滑卡片**：每张可放图，或放**店铺上传的视频 / YouTube、Vimeo 链接**。
@@ -55,6 +55,6 @@
 
 ::: details schema / 代码位置
 
-- **Slate 3.x（Handlebars）** — 主题仓库内：`sections/text-columns-renman2/text-columns-renman2.html`（末尾 schema 块）+ `sections/text-columns-renman2/blocks/*.html`
+- **Shopline 3.x（Sline）** — 主题仓库内：`sections/text-columns-renman2/text-columns-renman2.html`（末尾 schema 块）+ `sections/text-columns-renman2/blocks/*.html`
 - 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
 :::

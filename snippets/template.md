@@ -5,7 +5,7 @@
 ::: info 元信息
 
 - **场景**：&lt;一句话用途&gt;
-- **适用版本**：&lt;Slate 2.x / Slate 3.x / 两版都有&gt;
+- **适用平台 / 语言**：&lt;Shopline 3.x · Sline / Shopline 2.x · Handlebars / Shopify · Liquid / 多种都有&gt;
 - **首次记录**：YYYY-MM-DD · 客户/主题：&lt;某店铺名 或 "通用"&gt;
 - **依赖**：&lt;jQuery / 某 CDN / 无&gt;
 - **放置位置**：&lt;主题 layout / 商品页 / 全站 footer / 后台「自定义代码」框&gt;
@@ -19,14 +19,21 @@
 
 ::: code-group
 
-```handlebars [Slate 3.x（Handlebars，daramiyo / kenpogen / pettena-kr）]
+```html [Shopline 3.x · Sline（daramiyo / kenpogen / pettena-kr / sosove-jp）]
 {{!-- 在主题里把这段放到 sections/<your-section>/<your-section>.html，或层级合适的 layout --}}
 <script>
   // <代码或 // TODO 待补>
 </script>
 ```
 
-```liquid [Slate 2.x（Liquid / sline，Giipet）]
+```html [Shopline 2.x · Handlebars（暂未使用，预留）]
+{{!-- 在主题里贴到 sections/<your-section>.html 或 layout/theme.html --}}
+<script>
+  // <代码或 // TODO 待补>
+</script>
+```
+
+```liquid [Shopify · Liquid（Giipet）]
 {%- comment -%}
   在 sections/<your-section>.liquid 或 layout/theme.liquid 合适位置贴入
 {%- endcomment -%}
@@ -35,8 +42,8 @@
 </script>
 ```
 
-```css [CSS（两版通用）]
-/* CSS 是纯标准语法，2.x / 3.x 一致 */
+```css [CSS（三种平台通用）]
+/* CSS 是纯标准语法，跨平台一致 */
 .your-selector {
   /* TODO 待补 */
 }
@@ -44,7 +51,7 @@
 
 :::
 
-> 上面三栏不一定全用——只有一种语言时把其它栏删掉。同一场景只有 2.x **或** 只有 3.x 写法时也只保留对应一栏。
+> 上面四栏不一定全用——只有一种语言时把其它栏删掉。
 
 ## 注意事项
 

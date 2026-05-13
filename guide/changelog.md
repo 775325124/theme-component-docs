@@ -9,11 +9,26 @@
 ## 2026-05
 
 <div class="changelog-item">
+<time>2026-05-13</time>
+
+**重要事实修正**：之前把 Shopline 主题统一称为 "Slate 2.x / 3.x"（错——Slate 是 Shopify 工具链术语），且把模板语言归属写反了。本次按 [Shopline 官方文档](https://developer.shopline.com/zh-hans-cn/docs/online-store-3-0-themes/bottle) 全部修正：
+
+- 「Slate 3.x」→ **Shopline 3.x · Sline**（daramiyo / kenpogen / pettena-kr / sosove-jp 用的是 Sline，不是"Handlebars-like"）
+- 「Slate 2.x（Liquid）」→ 这个其实是 **Shopify Liquid**（Giipet），跟 Shopline 不是一回事
+- 新增 **Shopline 2.x · Handlebars** 分组占位（目前未使用）
+- 重写 [主题版本与模板语言差异](/guide/version-difference)：现在三栏并排（Sline / Handlebars / Liquid），含官方文档链接和跨语言迁移对照表
+- 侧边栏分组按平台/语言重命名
+- 6 篇组件文档顶部徽章 + 维护者参考块同步更新
+- snippets/template 由"两版"扩展为"三种平台/语言"
+
+</div>
+
+<div class="changelog-item">
 <time>2026-05-12</time>
 
 **重大改版**：
 
-- 全站按 **Slate 2.x / 3.x** 双轨分组（侧边栏、组件总览表）
+- 全站按主题版本分组（侧边栏、组件总览表）
 - 新增 [自定义代码片段库](/snippets/)（技术向，按场景组织）
 - 新增 [版本差异说明](/guide/version-difference)
 - 每页底部加「反馈这一页」按钮，一键到 GitHub Issue

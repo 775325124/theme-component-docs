@@ -1,7 +1,7 @@
 # 红人模块（图文多列）
 
 ::: info 适用范围
-**Slate 3.x（Handlebars）** · 主题：daramiyo · kenpogen
+**Shopline 3.x（Sline）** · 主题：daramiyo · kenpogen
 :::
 
 **适合做什么：** 多张「大图 + 标题 + 可选小图标 + 文字介绍 + 按钮」，电脑上几列排开；手机可以一排多张，或左右滑一张一张看。
@@ -37,6 +37,6 @@
 
 ::: details schema / 代码位置
 
-- **Slate 3.x（Handlebars）** — 主题仓库内：`sections/text-columns-renman/text-columns-renman.html`（末尾 schema 块）+ `sections/text-columns-renman/blocks/*.html`
+- **Shopline 3.x（Sline）** — 主题仓库内：`sections/text-columns-renman/text-columns-renman.html`（末尾 schema 块）+ `sections/text-columns-renman/blocks/*.html`
 - 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
 :::

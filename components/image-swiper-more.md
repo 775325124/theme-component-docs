@@ -1,7 +1,7 @@
 # 图片轮播 Plus（自定义每屏数量）
 
 ::: info 适用范围
-**Slate 3.x（Handlebars）** · 主题：kenpogen
+**Shopline 3.x（Sline）** · 主题：kenpogen
 :::
 
 **适合做什么：** 横滑图片墙，能精确控制「电脑上一屏露几张」「移动端要不要单独排版」。比主题自带的轮播更灵活：
@@ -81,7 +81,7 @@
 
 ::: details schema / 代码位置
 
-- **Slate 3.x（Handlebars）** — 主题仓库内：`sections/image-swiper-more/image-swiper-more.html`（末尾 schema 块）+ `sections/image-swiper-more/blocks/image-slide.html`
+- **Shopline 3.x（Sline）** — 主题仓库内：`sections/image-swiper-more/image-swiper-more.html`（末尾 schema 块）+ `sections/image-swiper-more/blocks/image-slide.html`
 - 切换时间字段 `delay_time` 单位是**毫秒**（非秒）。
 - 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
 :::

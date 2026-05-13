@@ -40,7 +40,7 @@ features:
   <a class="role-card" href="/theme-component-docs/guide/version-difference">
     <span class="role-icon">🛠️</span>
     <h3>技术维护者</h3>
-    <p>主题代码结构、Slate 2.x vs 3.x 差异、自定义代码片段库。</p>
+    <p>主题代码结构、Shopline 3.x（Sline）/ Shopify（Liquid）/ Shopline 2.x（Handlebars）差异、自定义代码片段库。</p>
   </a>
   <a class="role-card" href="/theme-component-docs/components/">
     <span class="role-icon">🔗</span>
@@ -56,9 +56,9 @@ features:
 
 ## 站内结构
 
-- **[组件总览](/components/)** — 所有运营向自定义组件，按 Slate 版本分组
+- **[组件总览](/components/)** — 所有运营向自定义组件，按平台 / 模板语言分组
 - **[代码片段库](/snippets/)** — 技术向：常用 CSS/JS 注入片段，按场景检索
-- **[版本差异](/guide/version-difference)** — Slate 2.x（Liquid）vs 3.x（Handlebars）实现差异
+- **[主题版本与模板语言差异](/guide/version-difference)** — Shopline 3.x（Sline） / Shopify（Liquid） / Shopline 2.x（Handlebars）实现差异
 - **[FAQ](/components/troubleshooting)** — 三类用户常见问题
 - **[维护与发布](/guide/deploy-update)** — 改完手册怎么上线
 

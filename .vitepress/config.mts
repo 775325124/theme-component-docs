@@ -115,7 +115,7 @@ export default defineConfig({
           { text: '首页', link: '/' },
           { text: '独立仓库全流程', link: '/workflow' },
           { text: '如何把模块加到页面', link: '/guide/common' },
-          { text: 'Slate 2.x vs 3.x 主题差异', link: '/guide/version-difference' },
+          { text: '主题版本与模板语言差异', link: '/guide/version-difference' },
         ],
       },
       {
@@ -126,7 +126,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Slate 3.x 主题（kenpogen / daramiyo / pettena-kr）',
+        text: 'Shopline 3.x · Sline 主题（daramiyo / kenpogen / pettena-kr / sosove-jp）',
         collapsed: false,
         items: [
           { text: '人气视频', link: '/components/kol-recommend' },
@@ -138,10 +138,17 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Slate 2.x 主题（Giipet）',
+        text: 'Shopify · Liquid 主题（Giipet）',
         collapsed: true,
         items: [
           { text: '（暂无专属组件文档）', link: '/components/' },
+        ],
+      },
+      {
+        text: 'Shopline 2.x · Handlebars 主题（暂未使用）',
+        collapsed: true,
+        items: [
+          { text: '（预留分组）', link: '/guide/version-difference' },
         ],
       },
       {

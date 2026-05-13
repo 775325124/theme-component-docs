@@ -58,9 +58,13 @@
 
 handbook 没监听主题仓库 commit。**改完 schema 后请回 handbook 把表格里的标签 / 默认值改一遍**（每篇组件文档底部有「维护者参考」节，标了对应代码位置）。
 
-### Slate 2.x 和 3.x 模板语法差别
+### 三种模板语言怎么区分（Shopline Sline / Handlebars / Shopify Liquid）
 
-见 [Slate 2.x vs 3.x 主题差异](/guide/version-difference)。简单说：扁平 `.liquid` + `{% %}` 是 2.x，文件夹 `.html` + `{{# }}` 是 3.x。
+见 [主题版本与模板语言差异](/guide/version-difference)。30 秒判断法：
+
+- 看到 `sections/<name>.liquid` 扁平 + `{% if %}` `{% schema %}` → **Shopify Liquid**（Giipet）
+- 看到 `sections/<name>/<name>.html` 文件夹 + `{{#if}}` `{{#schema}}` `| asset_url()` → **Shopline 3.x · Sline**（daramiyo / kenpogen / pettena-kr / sosove-jp）
+- 看到 `sections/<name>.html` 扁平 + `{{#if}}` + helper → **Shopline 2.x · Handlebars**（目前未使用）
 
 ### `git commit -m` 报 `unknown option 'trailer'`
 
