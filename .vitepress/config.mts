@@ -126,7 +126,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Shopline 3.x · Sline 主题（daramiyo / kenpogen / pettena-kr / sosove-jp）',
+        text: 'Shopline 3.x · Sline 主题',
         collapsed: false,
         items: [
           { text: '人气视频', link: '/components/kol-recommend' },
@@ -135,17 +135,18 @@ export default defineConfig({
           { text: '产品排行榜', link: '/components/product-ranking' },
           { text: 'Tab 切换图文', link: '/components/tab-switcher' },
           { text: '图片轮播 Plus', link: '/components/image-swiper-more' },
+          { text: '图文锚点', link: '/components/image-text-anchor' },
         ],
       },
       {
-        text: 'Shopify · Liquid 主题（Giipet）',
+        text: 'Shopify · Liquid 主题',
         collapsed: true,
         items: [
           { text: '（暂无专属组件文档）', link: '/components/' },
         ],
       },
       {
-        text: 'Shopline 2.x · Handlebars 主题（暂未使用）',
+        text: 'Shopline 2.x · Handlebars 主题',
         collapsed: true,
         items: [
           { text: '（预留分组）', link: '/guide/version-difference' },
