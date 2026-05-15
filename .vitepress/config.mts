@@ -140,10 +140,10 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Shopify · Liquid 主题',
-        collapsed: true,
+        text: 'Shopify · Liquid 主题（Giipet / pettena-jp）',
+        collapsed: false,
         items: [
-          { text: '（暂无专属组件文档）', link: '/components/' },
+          { text: '婴儿车对比表', link: '/components/stroller-compare-table' },
         ],
       },
       {
