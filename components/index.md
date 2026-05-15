@@ -21,6 +21,7 @@
 | ![ts](/screenshots/tab-switcher.png) | **Tab Switcher** | 顶部 Tab + 大图 + 3 商品卡（或纯图）轮播 | Shopline 3.x · Sline | kenpogen | [打开](/components/tab-switcher) |
 | ![isM](/screenshots/image-swiper-more.png) | **轮播(自定义数量)** | 横滑图片墙，每屏数量可填小数（如 2.5） | Shopline 3.x · Sline | kenpogen | [打开](/components/image-swiper-more) |
 | ![ita](/screenshots/image-text-anchor.png) | **图文锚点** | 带标题的图片入口，点击自动滚动到指定区域 | Shopline 3.x · Sline | kenpogen | [打开](/components/image-text-anchor) |
+| ![ssc](/screenshots/staff-style-coordination.png) | **人员穿搭展示** | 员工/KOL 穿搭卡片，支持网格和轮播两种布局 | Shopline 3.x · Sline | sosove-jp | [打开](/components/staff-style-coordination) |
 
 > **Shopify Giipet 主题** 与 **Shopline 2.x（Handlebars）主题** 目前没有专属自定义组件登记。如需把上面 Sline 组件移植过去，请参考 [主题版本与模板语言差异 → 跨语言迁移注意事项](/guide/version-difference#跨语言迁移注意事项)。
 

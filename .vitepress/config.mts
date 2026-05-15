@@ -136,6 +136,7 @@ export default defineConfig({
           { text: 'Tab 切换图文', link: '/components/tab-switcher' },
           { text: '图片轮播 Plus', link: '/components/image-swiper-more' },
           { text: '图文锚点', link: '/components/image-text-anchor' },
+          { text: '人员穿搭展示', link: '/components/staff-style-coordination' },
         ],
       },
       {
