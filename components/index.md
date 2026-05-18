@@ -21,6 +21,11 @@
 | ![ts](/screenshots/tab-switcher.png) | **Tab Switcher** | 顶部 Tab + 大图 + 3 商品卡（或纯图）轮播 | Shopline 3.x · Sline | kenpogen | [打开](/components/tab-switcher) |
 | ![isM](/screenshots/image-swiper-more.png) | **轮播(自定义数量)** | 横滑图片墙，每屏数量可填小数（如 2.5） | Shopline 3.x · Sline | kenpogen | [打开](/components/image-swiper-more) |
 | ![ita](/screenshots/image-text-anchor.png) | **图文锚点** | 带标题的图片入口，点击自动滚动到指定区域 | Shopline 3.x · Sline | kenpogen | [打开](/components/image-text-anchor) |
+| ![pdec](/screenshots/product-dec.png) | **产品描述** | 展示商品后台「描述」正文，可配合详情 Tab 导航 | Shopline 3.x · Sline | kenpogen | [打开](/components/product-dec) |
+| ![pdet](/screenshots/product-detail.png) | **产品详情** | 图片 / 参数 / 尺码表 / 富文本组合，多块读元字段 | Shopline 3.x · Sline | kenpogen | [打开](/components/product-detail) |
+| ![pdn](/screenshots/product-detail-nav.png) | **产品详情导航** | 商品页 Tab 切换导航，移动端可吸顶 | Shopline 3.x · Sline | kenpogen | [打开](/components/product-detail-nav) |
+| ![pnav](/screenshots/product-navigation.png) | **产品导航** | 页内锚点按钮，顶部或底部固定 | Shopline 3.x · Sline | kenpogen | [打开](/components/product-navigation) |
+| ![psub](/screenshots/product-subtitle.png) | **产品摘要** | 商品元字段短摘要，支持换行 | Shopline 3.x · Sline | kenpogen | [打开](/components/product-subtitle) |
 | ![ssc](/screenshots/staff-style-coordination.png) | **人员穿搭展示** | 员工/KOL 穿搭卡片，支持网格和轮播两种布局 | Shopline 3.x · Sline | sosove-jp | [打开](/components/staff-style-coordination) |
 | ![sct](/screenshots/stroller-compare-table.png) | **婴儿车对比表** | 多款婴儿车参数横向对比，数据来自元对象 | Shopify · Liquid | pettena-jp | [打开](/components/stroller-compare-table) |
 
