@@ -6,7 +6,7 @@
 
 **适合做什么：** 一排展示多位达人：头像、昵称、短视频封面，下面带一句商品介绍，点整卡可跳到商品页。适合「Instagram 同款」「博主试穿」类内容。
 
-![后台截图占位](/screenshots/kol-recommend.png)
+![人气视频前台效果](/screenshots/kol-recommend.png)
 
 ## 整段标题区（右侧最上面几项）
 

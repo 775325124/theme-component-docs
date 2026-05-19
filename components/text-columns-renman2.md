@@ -6,7 +6,7 @@
 
 后台名称可能是 **红人模块(视频)**。和手机淘宝类似的**横滑卡片**：每张可放图，或放**店铺上传的视频 / YouTube、Vimeo 链接**。
 
-![后台截图占位](/screenshots/text-columns-renman2.png)
+![红人模块视频前台效果](/screenshots/text-columns-renman2.png)
 
 ## 整段（分区）设置
 

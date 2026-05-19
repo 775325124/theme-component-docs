@@ -6,7 +6,7 @@
 
 **适合做什么：** 多张「大图 + 标题 + 可选小图标 + 文字介绍 + 按钮」，电脑上几列排开；手机可以一排多张，或左右滑一张一张看。
 
-![后台截图占位](/screenshots/text-columns-renman.png)
+![红人模块前台效果](/screenshots/text-columns-renman.png)
 
 ## 整段（分区）设置
 

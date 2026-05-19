@@ -6,7 +6,7 @@
 
 **适合做什么：** 在商品详情页顶部或底部固定一排**锚点按钮**，顾客点击后平滑滚动到页面内对应区域（如「产品详情」「尺码」「评价」等）。
 
-![后台截图占位](/screenshots/product-navigation.png)
+![产品导航前台效果](/screenshots/product-navigation.png)
 
 ## 整段（分区）设置
 
