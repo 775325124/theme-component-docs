@@ -9,6 +9,13 @@
 ## 2026-05
 
 <div class="changelog-item">
+<time>2026-05-19</time>
+
+**新增板块**： [Shopline 应用插件](/apps/)，与主题组件分开；首篇 [自定义购买选择器 product-variant-picker2](/apps/product-variant-picker2)（商品元字段 + Shopline 应用配置）。
+
+</div>
+
+<div class="changelog-item">
 <time>2026-05-13</time>
 
 **重要事实修正**：之前把 Shopline 主题统一称为 "Slate 2.x / 3.x"（错——Slate 是 Shopify 工具链术语），且把模板语言归属写反了。本次按 [Shopline 官方文档](https://developer.shopline.com/zh-hans-cn/docs/online-store-3-0-themes/bottle) 全部修正：

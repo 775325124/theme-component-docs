@@ -105,6 +105,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '组件总览', link: '/components/' },
       { text: '代码片段', link: '/snippets/' },
+      { text: '应用插件', link: '/apps/' },
       { text: '版本差异', link: '/guide/version-difference' },
       { text: '更新与发布', link: '/guide/deploy-update' },
     ],
@@ -156,6 +157,14 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '（预留分组）', link: '/guide/version-difference' },
+        ],
+      },
+      {
+        text: 'Shopline 应用插件',
+        collapsed: false,
+        items: [
+          { text: '插件总览', link: '/apps/' },
+          { text: '自定义购买选择器', link: '/apps/product-variant-picker2' },
         ],
       },
       {

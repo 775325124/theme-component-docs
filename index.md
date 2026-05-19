@@ -57,6 +57,7 @@ features:
 ## 站内结构
 
 - **[组件总览](/components/)** — 所有运营向自定义组件，按平台 / 模板语言分组
+- **[Shopline 应用插件](/apps/)** — 应用脚本配置（元字段 + Shopline 后台），如多件购买选择器
 - **[代码片段库](/snippets/)** — 技术向：常用 CSS/JS 注入片段，按场景检索
 - **[主题版本与模板语言差异](/guide/version-difference)** — Shopline 3.x（Sline） / Shopify（Liquid） / Shopline 2.x（Handlebars）实现差异
 - **[FAQ](/components/troubleshooting)** — 三类用户常见问题

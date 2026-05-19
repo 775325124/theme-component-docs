@@ -1,0 +1,35 @@
+# Shopline 应用插件
+
+本板块记录 **Shopline 店铺应用 / 自定义脚本** 的配置方法，与「主题分区组件」分开维护。
+
+| 区别 | 主题组件（components） | 应用插件（apps） |
+|------|------------------------|------------------|
+| 代码位置 | 主题仓库 `sections/` | [shopline-app-script](https://github.com/) 等脚本仓库，CDN 下发 |
+| 后台入口 | 在线商店 → 主题 → 自定义分区 | Shopline 应用市场 / 已安装应用 + **商品元字段** |
+| 典型配置 | 分区设置、块设置 | **商品元字段** + 应用侧参数（容器、样式） |
+
+::: tip 和主题的关系
+应用脚本挂在商品页或应用块容器里，**不替代**主题自带的规格选择器；常与「多件优惠 / 组合购买」类商品模板（如 `product.sku`）一起使用。
+:::
+
+## 插件索引
+
+| 后台 / 脚本名 | 一句话用途 | 配置方式 | 详情 |
+|---------------|------------|----------|------|
+| **product-variant-picker2** | 弹层式多件规格选择 + 分层优惠，加购 / 结账 | 商品元字段 + Shopline 应用配置 | [打开](/apps/product-variant-picker2) |
+
+## 怎么加新插件文档
+
+1. 在 `apps/` 下新建 `<slug>.md`（与脚本目录名一致，kebab-case）
+2. 在本页表格追加一行
+3. 在 `.vitepress/config.mts` 的「Shopline 应用插件」分组追加侧栏项
+4. `npm run build` → `git push`
+
+或在 Cursor 中说「新增了 Shopline 应用插件 xxx，更新手册」，由 agent 按上述步骤处理。
+
+## 脚本仓库
+
+| 项目 | 说明 |
+|------|------|
+| **shopline-app-script** | 脚本源码与构建产物；`product-variant-picker2` 对应 `dist/scripts/product-variant-picker2/` |
+| **CDN** | 线上入口：`https://shopline-scripts-cdn.qgergdv.com/scripts/product-variant-picker2/main.js` |
