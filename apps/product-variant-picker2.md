@@ -8,6 +8,8 @@
 
 > 与主题自带的「规格选择器」不同：本插件是**独立脚本 + 弹层 UI**，需在 Shopline 后台为每个商品填好元字段后才会显示对应优惠方案。
 
+![自定义购买选择器前台效果](/screenshots/product-variant-picker2.png)
+
 ## 整体流程（运营视角）
 
 ```mermaid
