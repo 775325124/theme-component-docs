@@ -172,6 +172,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '片段总览', link: '/snippets/' },
+          { text: '修改 DOM 文字', link: '/snippets/update-dom-text' },
           { text: '新片段模板', link: '/snippets/template' },
         ],
       },
