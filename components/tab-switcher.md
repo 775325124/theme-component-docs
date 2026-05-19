@@ -6,7 +6,7 @@
 
 **适合做什么：** 顶部一排 Tab（如「新品」「热卖」「促销」），点不同 Tab 切到不同的「大图 + 介绍文字 + 3 个商品」组合，常用做首页主推位、活动专区。模块自带左右切换箭头和分页指示点，也支持自动轮播。
 
-![后台截图占位](/screenshots/tab-switcher.png)
+![Tab Switcher 前台效果](/screenshots/tab-switcher.png)
 
 > 模块里每一个**块**就是一个 Tab。块分两种：
 >

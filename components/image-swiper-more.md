@@ -9,7 +9,7 @@
 - 数量可以填小数（例如 `2.5`），表示一屏露 2 整张 + 半张，**暗示用户右边还有内容**。
 - 每张图可以分别配 PC 图和移动端图，还可以叠一个「按钮图」点击跳转。
 
-![后台截图占位](/screenshots/image-swiper-more.png)
+![轮播自定义数量前台效果](/screenshots/image-swiper-more.png)
 
 ## 整段（分区）设置
 
