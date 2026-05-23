@@ -11,6 +11,13 @@
 <div class="changelog-item">
 <time>2026-05-19</time>
 
+**kenpogen 组件更新**：[热销商品](/components/best-sellers) 新文档 + 前台截图；[移动端悬浮购买条](/components/sticky-purchase) 商品详情 block 说明。
+
+</div>
+
+<div class="changelog-item">
+<time>2026-05-19</time>
+
 **新增板块**： [Shopline 应用插件](/apps/)，与主题组件分开；首篇 [自定义购买选择器 product-variant-picker2](/apps/product-variant-picker2)（商品元字段 + Shopline 应用配置）。
 
 </div>
