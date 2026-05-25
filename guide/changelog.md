@@ -11,6 +11,20 @@
 <div class="changelog-item">
 <time>2026-05-19</time>
 
+**应用插件**：[自定义购买选择器](/apps/product-variant-picker2) 补充「须配合 Shopline 自动折扣、元字段与后台折扣逐档对齐」说明及对照表。
+
+</div>
+
+<div class="changelog-item">
+<time>2026-05-19</time>
+
+**组件文档同步（kenpogen schema 更新）**：[产品排行榜](/components/product-ranking)、[红人模块（图文）](/components/text-columns-renman)、[红人模块（视频）](/components/text-columns-renman2) — 标题/副标题字号改为主题 typography 下拉选项说明；新增 [热门标签](/components/hot-tags)、[通知消息](/components/notice) 文档。
+
+</div>
+
+<div class="changelog-item">
+<time>2026-05-19</time>
+
 **kenpogen 组件更新**：[热销商品](/components/best-sellers) 新文档 + 前台截图；[移动端悬浮购买条](/components/sticky-purchase) 商品详情 block 说明。
 
 </div>

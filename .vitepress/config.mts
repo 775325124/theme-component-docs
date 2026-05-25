@@ -134,6 +134,8 @@ export default defineConfig({
           { text: '红人模块（图文）', link: '/components/text-columns-renman' },
           { text: '红人模块（视频轮播）', link: '/components/text-columns-renman2' },
           { text: '产品排行榜', link: '/components/product-ranking' },
+          { text: '热门标签', link: '/components/hot-tags' },
+          { text: '通知消息', link: '/components/notice' },
           { text: '热销商品', link: '/components/best-sellers' },
           { text: 'Tab 切换图文', link: '/components/tab-switcher' },
           { text: '图片轮播 Plus', link: '/components/image-swiper-more' },

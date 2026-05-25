@@ -6,17 +6,21 @@
 |------|------------------------|------------------|
 | 代码位置 | 主题仓库 `sections/` | [shopline-app-script](https://github.com/) 等脚本仓库，CDN 下发 |
 | 后台入口 | 在线商店 → 主题 → 自定义分区 | Shopline 应用市场 / 已安装应用 + **商品元字段** |
-| 典型配置 | 分区设置、块设置 | **商品元字段** + 应用侧参数（容器、样式） |
+| 典型配置 | 分区设置、块设置 | **Shopline 自动折扣** + **商品元字段（与折扣一致）** + 应用挂载 |
 
 ::: tip 和主题的关系
 应用脚本挂在商品页或应用块容器里，**不替代**主题自带的规格选择器；常与「多件优惠 / 组合购买」类商品模板（如 `product.sku`）一起使用。
+:::
+
+::: warning product-variant-picker2 特别注意
+须先在 Shopline **营销 → 折扣** 配好多件阶梯自动折扣，再在商品元字段里按**相同件数、相同减免**填写；详见 [自定义购买选择器](/apps/product-variant-picker2#必读须配合-shopline-折扣并与元字段一致)。
 :::
 
 ## 插件索引
 
 | 缩略 | 后台 / 脚本名 | 一句话用途 | 配置方式 | 详情 |
 |------|---------------|------------|----------|------|
-| ![pvp2](/screenshots/product-variant-picker2.png) | **product-variant-picker2** | 弹层式多件规格选择 + 分层优惠，加购 / 结账 | 商品元字段 + Shopline 应用配置 | [打开](/apps/product-variant-picker2) |
+| ![pvp2](/screenshots/product-variant-picker2.png) | **product-variant-picker2** | 弹层式多件规格选择 + 分层优惠，加购 / 结账 | Shopline 多件折扣 + 元字段同步 + 应用挂载 | [打开](/apps/product-variant-picker2) |
 
 ## 怎么加新插件文档
 
