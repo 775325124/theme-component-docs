@@ -17,6 +17,7 @@
 **目的：** 在 VitePress dev 环境里验证「浏览器跨域调用 Shopline Open API」是否被 CORS 允许。如果不行，从 Task 5 起走 fallback 分支。
 
 **Files:**
+
 - 临时新建：`scratch/cors-probe.html`（验证完即删，不入 git）
 
 - [ ] **Step 1：创建临时探测页**
@@ -24,6 +25,7 @@
 把以下文件写到 `scratch/cors-probe.html`（手册根目录新建 scratch 目录）。注意：这个文件**只是临时探测用，验证完后删除**。
 
 本页一次性探三件事：
+
 1. CORS 能不能跨域到 `*.myshopline.com`
 2. 普通命名空间 `my_fields` + **不传** `access` 是否 200
 3. 普通命名空间 `my_fields` + **强制传** `access.admin = MERCHANT_READ_WRITE` 是否 200（决定 access 规则的最终走向）
@@ -107,11 +109,13 @@ npm run dev
 - [ ] **Step 4：决策分支**
 
 CORS / token：
+
 - 若 CORS 通 + token OK：本计划按「主路径」走（Task 5 内的浏览器直发分支）。
 - 若 CORS 失败：按「降级路径」走，弹窗里仅显示「复制 Console 脚本」入口。
 - 若 `/auth/login` 都 401：fallback 脚本作为唯一路径。
 
 access.admin（决定 Task 4 `createMetafieldDefinition` 内的判定规则）：
+
 - 若 A 200、B 400：保留 spec 里的规则——`$app:` 才传 access，`my_fields` 不传。
 - 若 A 200、B 200：放宽规则——按模板里写的 access 透传，不再按 namespace 拦截。
 - 若 A 400（很意外）：再开一次 Task 1 探测，把 `name`/`key`/`description` 全去掉做最小集 + 详读官方 example。
@@ -137,6 +141,7 @@ rm -rf scratch
 ## Task 2：建立元字段模板目录与 JSON Schema
 
 **Files:**
+
 - Create: `apps/metafield-installers/_installer.schema.json`
 - Create: `apps/metafield-installers/README.md`
 
@@ -296,6 +301,7 @@ git commit -m "feat(apps): 元字段安装模板目录与 JSON Schema"
 ## Task 3：写第一份模板（product-variant-picker2）
 
 **Files:**
+
 - Create: `apps/metafield-installers/product-variant-picker2.json`
 
 - [ ] **Step 1：把 5 个字段对齐 spec 写入 JSON**
@@ -366,6 +372,7 @@ git commit -m "feat(apps): 新增 product-variant-picker2 元字段安装模板"
 ## Task 4：Shopline Admin API 客户端工具
 
 **Files:**
+
 - Create: `.vitepress/theme/lib/shoplineAdmin.ts`
 - Create: `.vitepress/theme/lib/installerLoader.ts`
 
@@ -636,6 +643,7 @@ git commit -m "feat(theme): Shopline admin token & metafield-definition 客户�
 ## Task 5：UI 组件 · 弹窗 + 安装流程
 
 **Files:**
+
 - Create: `.vitepress/theme/components/MetafieldInstaller.vue`
 
 - [ ] **Step 1：写 Vue 组件**
@@ -999,6 +1007,7 @@ git commit -m "feat(theme): 元字段一键安装弹窗组件"
 ## Task 6：按钮组件 + 全局注册
 
 **Files:**
+
 - Create: `.vitepress/theme/components/MetafieldInstallerButton.vue`
 - Modify: `.vitepress/theme/index.ts`
 
@@ -1117,6 +1126,7 @@ git commit -m "feat(theme): 元字段安装按钮组件 + 全局注册"
 ## Task 7：把按钮接入索引页 + 详情页
 
 **Files:**
+
 - Modify: `apps/index.md`
 - Modify: `apps/product-variant-picker2.md`
 
@@ -1173,6 +1183,7 @@ git commit -m "docs(apps): 索引页与 product-variant-picker2 接入一键安�
 ## Task 8：端到端验证 + 文档收尾
 
 **Files:**
+
 - Modify: `apps/metafield-installers/README.md`（增补「已知问题与排错」一节）
 
 - [ ] **Step 1：起 dev 跑真实安装**
