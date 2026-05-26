@@ -169,6 +169,7 @@ export default defineConfig({
         items: [
           { text: '插件总览', link: '/apps/' },
           { text: '自定义购买选择器', link: '/apps/product-variant-picker2' },
+          { text: '自定义摘要(富文本)', link: '/apps/goods-summary-doc' },
         ],
       },
       {

@@ -48,6 +48,30 @@ import { withBase } from 'vitepress'
   </div>
 </article>
 
+<article class="apps-plugin-card">
+  <a class="apps-plugin-card__thumb" href="goods-summary-doc" aria-label="查看 goods-summary-doc 文档">
+    <img :src="withBase('/screenshots/goods-summary-doc.png')" alt="自定义摘要预览" loading="lazy" />
+  </a>
+  <div class="apps-plugin-card__main">
+    <header class="apps-plugin-card__header">
+      <h3 class="apps-plugin-card__name">
+        <a href="goods-summary-doc">goods-summary-doc</a>
+      </h3>
+      <p class="apps-plugin-card__tagline">商品详情页富文本摘要，支持换行 + 可选文字滚动</p>
+    </header>
+    <dl class="apps-plugin-card__meta">
+      <div class="apps-plugin-card__meta-row">
+        <dt>配置方式</dt>
+        <dd>商品元字段（富文本）+ 应用块设置</dd>
+      </div>
+    </dl>
+    <footer class="apps-plugin-card__actions">
+      <a class="apps-plugin-card__link" href="goods-summary-doc">打开文档</a>
+      <MetafieldInstallerButton id="goods-summary-doc" size="sm" label="⚡ 一键安装元字段" />
+    </footer>
+  </div>
+</article>
+
 </div>
 
 ## 怎么加新插件文档
@@ -64,4 +88,5 @@ import { withBase } from 'vitepress'
 | 项目 | 说明 |
 |------|------|
 | **shopline-app-script** | 脚本源码与构建产物；`product-variant-picker2` 对应 `dist/scripts/product-variant-picker2/` |
+| **shopline-blocks** | Shopline 应用块源码；`goods-summary-doc-block` 对应 `app01/theme-app-extension/blocks/` |
 | **CDN** | 线上入口：`https://shopline-scripts-cdn.qgergdv.com/scripts/product-variant-picker2/main.js` |

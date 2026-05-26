@@ -1,0 +1,20 @@
+{
+  "$schema": "./_installer.schema.json",
+  "id": "goods-summary-doc",
+  "title": "自定义摘要(富文本) · 商品元字段",
+  "docHref": "goods-summary-doc",
+  "defaults": {
+    "namespace": "my_fields",
+    "ownerResource": "products",
+    "access": { "admin": "MERCHANT_READ_WRITE" }
+  },
+  "fields": [
+    {
+      "key": "summary_doc",
+      "name": "自定义摘要(富文本-可换行)",
+      "type": "rich_text_field",
+      "description": "商品详情页展示的富文本摘要，支持换行；可选文字滚动效果",
+      "required": true
+    }
+  ]
+}

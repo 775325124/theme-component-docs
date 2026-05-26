@@ -149,8 +149,8 @@ export async function createMetafieldDefinition(
 
   const message: string = String(payload?.errors ?? payload?.message ?? `HTTP ${resp.status}`)
   const alreadyExists =
-    resp.status === 400 &&
-    /already\s*exist|exists|重复|已存在|duplicate/i.test(message)
+    (resp.status === 400 || resp.status === 500) &&
+    /already\s*exist|exists|is\s*exist|重复|已存在|duplicate/i.test(message)
 
   return { ok: false, alreadyExists, status: resp.status, message }
 }
