@@ -18,9 +18,9 @@
 
 ## 插件索引
 
-| 缩略 | 后台 / 脚本名 | 一句话用途 | 配置方式 | 详情 |
-|------|---------------|------------|----------|------|
-| ![pvp2](/screenshots/product-variant-picker2.png) | **product-variant-picker2** | 弹层式多件规格选择 + 分层优惠，加购 / 结账 | Shopline 多件折扣 + 元字段同步 + 应用挂载 | [打开](/apps/product-variant-picker2) |
+| 缩略 | 后台 / 脚本名 | 一句话用途 | 配置方式 | 详情 | 元字段一键安装 |
+|------|---------------|------------|----------|------|------|
+| ![pvp2](/screenshots/product-variant-picker2.png) | **product-variant-picker2** | 弹层式多件规格选择 + 分层优惠，加购 / 结账 | Shopline 多件折扣 + 元字段同步 + 应用挂载 | [打开](/apps/product-variant-picker2) | <MetafieldInstallerButton id="product-variant-picker2" size="sm" label="⚡ 安装" /> |
 
 ## 怎么加新插件文档
 
