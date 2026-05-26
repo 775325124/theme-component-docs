@@ -25,7 +25,7 @@
 | `defaults.namespace` | 否 | 默认 `my_fields` |
 | `defaults.ownerResource` | 否 | 默认 `products` |
 | `fields[].key` | 是 | 3~30 字符，仅字母数字下划线连字符 |
-| `fields[].name` | 是 | 显示名 |
+| `fields[].name` | 是 | Shopline 后台「字段名称」；一键安装时写入 API 的 `definition.name` |
 | `fields[].type` | 是 | Shopline 支持的 type 枚举（见 schema） |
 | `fields[].description` | 否 | 255 字符内的说明 |
 | `fields[].required` | 否 | 文档用，不影响 API 调用 |

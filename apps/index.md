@@ -21,13 +21,13 @@
 <div class="apps-plugin-index">
 
 <article class="apps-plugin-card">
-  <a class="apps-plugin-card__thumb" href="/apps/product-variant-picker2" aria-label="查看 product-variant-picker2 文档">
+  <a class="apps-plugin-card__thumb" href="product-variant-picker2" aria-label="查看 product-variant-picker2 文档">
     ![product-variant-picker2 预览](/screenshots/product-variant-picker2.png)
   </a>
   <div class="apps-plugin-card__main">
     <header class="apps-plugin-card__header">
       <h3 class="apps-plugin-card__name">
-        <a href="/apps/product-variant-picker2">product-variant-picker2</a>
+        <a href="product-variant-picker2">product-variant-picker2</a>
       </h3>
       <p class="apps-plugin-card__tagline">弹层式多件规格选择 + 分层优惠，加购 / 结账</p>
     </header>
@@ -38,7 +38,7 @@
       </div>
     </dl>
     <footer class="apps-plugin-card__actions">
-      <a class="apps-plugin-card__link" href="/apps/product-variant-picker2">打开文档</a>
+      <a class="apps-plugin-card__link" href="product-variant-picker2">打开文档</a>
       <MetafieldInstallerButton id="product-variant-picker2" size="sm" label="⚡ 一键安装元字段" />
     </footer>
   </div>
@@ -49,7 +49,7 @@
 ## 怎么加新插件文档
 
 1. 在 `apps/` 下新建 `<slug>.md`（与脚本目录名一致，kebab-case）
-2. 在本页「插件索引」的 `.apps-plugin-index` 里复制一张 `.apps-plugin-card` 并改内容（见下方 HTML 结构）
+2. 在本页「插件索引」的 `.apps-plugin-index` 里复制一张 `.apps-plugin-card` 并改内容（链接用**相对路径**如 `your-plugin`，不要用 `/apps/...`，否则 GitHub Pages 会 404）
 3. 在 `.vitepress/config.mts` 的「Shopline 应用插件」分组追加侧栏项
 4. `npm run build` → `git push`
 
