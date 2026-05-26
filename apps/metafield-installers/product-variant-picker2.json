@@ -1,0 +1,47 @@
+{
+  "$schema": "./_installer.schema.json",
+  "id": "product-variant-picker2",
+  "title": "自定义购买选择器 · 商品元字段",
+  "docHref": "/apps/product-variant-picker2",
+  "defaults": {
+    "namespace": "my_fields",
+    "ownerResource": "products"
+  },
+  "fields": [
+    {
+      "key": "customDiscountTitle",
+      "name": "各档标题",
+      "type": "single_line_text_field",
+      "description": "各档标题，逗号分隔，例如 2足購入で,3足購入で,4足購入で",
+      "required": true
+    },
+    {
+      "key": "custom_discount_variant_num",
+      "name": "各档需选件数",
+      "type": "single_line_text_field",
+      "description": "各档需选几件，逗号分隔，例如 2,3,4",
+      "required": true
+    },
+    {
+      "key": "custom_discount_badge_labels",
+      "name": "各档角标文案",
+      "type": "single_line_text_field",
+      "description": "各档角标，逗号分隔，可留空",
+      "required": false
+    },
+    {
+      "key": "discountQuotas",
+      "name": "各档折扣百分比",
+      "type": "single_line_text_field",
+      "description": "整数百分比，逗号分隔；与 Shopline 自动折扣同步",
+      "required": false
+    },
+    {
+      "key": "fixedDiscountAmounts",
+      "name": "各档固定减免金额",
+      "type": "single_line_text_field",
+      "description": "主货币整数金额，逗号分隔；与百分比二选一",
+      "required": false
+    }
+  ]
+}
