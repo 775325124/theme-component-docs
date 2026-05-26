@@ -332,4 +332,55 @@ function close() {
 .mi-btn-secondary {
   background: var(--vp-c-bg-soft); color: var(--vp-c-text-1);
 }
+
+@media (max-width: 640px) {
+  .mi-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+  .mi-dialog {
+    width: 100%;
+    max-width: none;
+    max-height: min(92vh, 100%);
+    border-radius: 12px 12px 0 0;
+  }
+  .mi-head h3 {
+    font-size: 15px;
+    padding-right: 8px;
+  }
+  .mi-field-head {
+    display: none;
+  }
+  .mi-field-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .mi-field-row > div:nth-child(2) {
+    font-size: 12px;
+  }
+  .mi-foot {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .mi-btn-primary,
+  .mi-btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+  .mi-summary {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .mi-body {
+    padding: 12px 14px;
+  }
+  .mi-head,
+  .mi-foot {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
 </style>

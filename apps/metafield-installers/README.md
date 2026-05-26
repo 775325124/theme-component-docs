@@ -12,7 +12,7 @@
    <MetafieldInstallerButton id="<plugin-id>" />
    ```
 
-4. 索引页 `apps/index.md` 的表格不用动——会自动检测本目录下所有 JSON 并在索引页相应行渲染按钮。
+4. 在 `apps/index.md` 的 `.apps-plugin-index` 里复制一张 `.apps-plugin-card`，把 `MetafieldInstallerButton` 的 `id` 改成与 JSON 同名。
 5. `npm run build` 看是否有 lint 错误，提交。
 
 ## 字段说明

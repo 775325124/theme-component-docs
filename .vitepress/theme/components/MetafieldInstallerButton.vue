@@ -52,14 +52,35 @@ watchEffect(() => {
 </template>
 
 <style scoped>
-.mib-wrap { display: inline-flex; align-items: center; gap: 8px; }
+.mib-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+}
 .mib-btn {
-  display: inline-flex; align-items: center;
-  background: var(--vp-c-brand-1); color: #fff;
-  border: none; border-radius: 6px;
-  padding: 8px 14px; font: inherit; cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: var(--vp-c-brand-1);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font: inherit;
+  line-height: 1.35;
+  cursor: pointer;
 }
 .mib-btn:hover { background: var(--vp-c-brand-2); }
-.mib-btn-sm { padding: 4px 10px; font-size: 12px; }
-.mib-err { color: #dc2626; font-size: 12px; }
+.mib-btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.mib-err {
+  color: #dc2626;
+  font-size: 12px;
+  line-height: 1.4;
+}
 </style>

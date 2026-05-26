@@ -169,6 +169,175 @@
   max-width: 100%;
 }
 
+/* ── Shopline 应用插件 · 插件索引（卡片，小屏友好） ── */
+.apps-plugin-index {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px 0 24px;
+}
+
+.apps-plugin-card {
+  display: grid;
+  grid-template-columns: minmax(0, 140px) minmax(0, 1fr);
+  gap: 16px 20px;
+  padding: 16px 18px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  align-items: start;
+}
+
+.apps-plugin-card__thumb {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 0;
+  border: 1px solid var(--vp-c-divider);
+  background: linear-gradient(135deg, var(--vp-c-brand-soft) 0%, var(--vp-c-bg-soft) 100%);
+}
+
+.apps-plugin-card__thumb :is(p, img) {
+  margin: 0;
+}
+
+.apps-plugin-card__thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 88px;
+  object-fit: cover;
+}
+
+.apps-plugin-card__main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.apps-plugin-card__header {
+  margin: 0;
+}
+
+.apps-plugin-card__name {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  border: 0;
+  padding: 0;
+}
+
+.apps-plugin-card__name a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+}
+
+.apps-plugin-card__name a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.apps-plugin-card__tagline {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--vp-c-text-2);
+}
+
+.apps-plugin-card__meta {
+  margin: 0;
+  font-size: 13px;
+}
+
+.apps-plugin-card__meta-row {
+  display: grid;
+  grid-template-columns: 5.5em minmax(0, 1fr);
+  gap: 8px 12px;
+  align-items: start;
+}
+
+.apps-plugin-card__meta dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+}
+
+.apps-plugin-card__meta dd {
+  margin: 0;
+  color: var(--vp-c-text-1);
+  line-height: 1.5;
+}
+
+.apps-plugin-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+  padding-top: 4px;
+}
+
+.apps-plugin-card__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.apps-plugin-card__link:hover {
+  background: var(--vp-c-brand-soft);
+}
+
+@media (max-width: 640px) {
+  .apps-plugin-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+
+  .apps-plugin-card__thumb img {
+    max-height: 120px;
+  }
+
+  .apps-plugin-card__meta-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .apps-plugin-card__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .apps-plugin-card__link,
+  .apps-plugin-card__actions .mib-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .apps-plugin-card__actions .mib-wrap {
+    display: flex;
+    width: 100%;
+  }
+
+  .apps-plugin-card__actions .mib-btn {
+    flex: 1;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .apps-plugin-card {
+    grid-template-columns: 120px minmax(0, 1fr);
+  }
+}
+
 /* version-badge 容器：徽章信息块 */
 .custom-block.info {
   border-color: var(--vp-c-brand-1);
