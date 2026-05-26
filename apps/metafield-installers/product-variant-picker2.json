@@ -5,7 +5,8 @@
   "docHref": "/apps/product-variant-picker2",
   "defaults": {
     "namespace": "my_fields",
-    "ownerResource": "products"
+    "ownerResource": "products",
+    "access": { "admin": "MERCHANT_READ_WRITE" }
   },
   "fields": [
     {

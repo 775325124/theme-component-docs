@@ -18,6 +18,7 @@ export type InstallerTemplate = {
   defaults?: {
     namespace?: string
     ownerResource?: string
+    access?: { admin?: string }
   }
   fields: MetafieldFieldConfig[]
 }
@@ -105,7 +106,7 @@ export async function createMetafieldDefinition(
   handle: string,
   token: string,
   field: MetafieldFieldConfig,
-  defaults: { namespace: string; ownerResource: string }
+  defaults: { namespace: string; ownerResource: string; access?: { admin?: string } }
 ): Promise<CreateOutcome> {
   const namespace = field.namespace ?? defaults.namespace
   const ownerResource = field.ownerResource ?? defaults.ownerResource
@@ -118,8 +119,9 @@ export async function createMetafieldDefinition(
     type: field.type,
   }
   if (field.description) definition.description = field.description
-  if (namespace.startsWith('$app:') && field.access?.admin) {
-    definition.access = { admin: field.access.admin }
+  const accessAdmin = field.access?.admin ?? defaults.access?.admin
+  if (accessAdmin) {
+    definition.access = { admin: accessAdmin }
   }
 
   const url = metafieldDefinitionUrl(handle)
@@ -160,6 +162,7 @@ export function buildFallbackScript(
   const defaults = {
     namespace: template.defaults?.namespace ?? 'my_fields',
     ownerResource: template.defaults?.ownerResource ?? 'products',
+    access: template.defaults?.access,
   }
   const fieldsJson = JSON.stringify(template.fields, null, 2)
   const defaultsJson = JSON.stringify(defaults, null, 2)
@@ -193,7 +196,8 @@ export function buildFallbackScript(
     const or = f.ownerResource || DEFAULTS.ownerResource;
     const def = { name: f.name, key: f.key, namespace: ns, owner_resource: or, type: f.type };
     if (f.description) def.description = f.description;
-    if (ns.startsWith('$app:') && f.access && f.access.admin) def.access = { admin: f.access.admin };
+    const accessAdmin = (f.access && f.access.admin) || (DEFAULTS.access && DEFAULTS.access.admin);
+    if (accessAdmin) def.access = { admin: accessAdmin };
     try {
       const resp = await fetch('https://' + HANDLE + '.myshopline.com/admin/openapi/${SHOPLINE_METAFIELD_API_VERSION}/metafield_definition.json', {
         method: 'POST',

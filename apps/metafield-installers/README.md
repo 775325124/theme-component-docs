@@ -30,7 +30,8 @@
 | `fields[].description` | 否 | 255 字符内的说明 |
 | `fields[].required` | 否 | 文档用，不影响 API 调用 |
 | `fields[].namespace` | 否 | 字段级 namespace，覆盖 defaults |
-| `fields[].access.admin` | 否 | 仅 `$app:` 命名空间允许 |
+| `defaults.access.admin` | 否 | 模板级默认权限，如 `MERCHANT_READ_WRITE` |
+| `fields[].access.admin` | 否 | 字段级覆盖 `defaults.access` |
 
 ## Schema 校验
 
@@ -47,4 +48,5 @@ VS Code / Cursor 打开 JSON 时会自动按 `_installer.schema.json` 提示。
 
 ## 实测记录
 
-- **2026-05-26（Task 1 探测）**：CORS ✅、token ✅。无版本路径 `POST .../admin/openapi/metafield_definition.json` 返回 **404** `Url not found.`；修正为 `.../admin/openapi/v20260901/metafield_definition.json` 后可用。access A/B 待复测；实现暂按 spec（`$app:` 才传 access）。
+- **2026-05-26（Task 1 探测）**：CORS ✅、token ✅。无版本路径返回 **404**；修正为 `.../admin/openapi/v20260901/metafield_definition.json` 后可用。
+- **2026-05-26（Task 1 复测）**：`my_fields` 下 A（不传 access）与 B（传 `MERCHANT_READ_WRITE`）均为 **200**；响应里 `access` 可能仍为 `null`，属服务端表现。实现按模板 `defaults.access` / `fields[].access` 透传，不按 namespace 限制。

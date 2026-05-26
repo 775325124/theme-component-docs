@@ -27,6 +27,7 @@ const fallbackScript = computed(() => {
 const defaults = computed(() => ({
   namespace: props.template?.defaults?.namespace ?? 'my_fields',
   ownerResource: props.template?.defaults?.ownerResource ?? 'products',
+  access: props.template?.defaults?.access,
 }))
 
 const summary = computed(() => {

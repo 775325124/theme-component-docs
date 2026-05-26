@@ -22,6 +22,15 @@
           "type": "string",
           "enum": ["products", "variants", "collections", "customers", "orders", "pages", "blogs", "articles", "shop"],
           "default": "products"
+        },
+        "access": {
+          "type": "object",
+          "properties": {
+            "admin": {
+              "type": "string",
+              "enum": ["MERCHANT_READ_WRITE", "MERCHANT_READ", "PUBLIC_READ", "PRIVATE", "NONE"]
+            }
+          }
         }
       },
       "additionalProperties": false
@@ -76,7 +85,7 @@
           "required": { "type": "boolean", "default": false },
           "access": {
             "type": "object",
-            "description": "仅在 namespace 以 $app: 开头时有效",
+            "description": "可选；字段级覆盖 defaults.access",
             "properties": {
               "admin": {
                 "type": "string",

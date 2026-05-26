@@ -1254,5 +1254,5 @@ git commit -m "docs(apps): 一键安装器实测记录与排错指南"
 
 ## 执行日志（执行时追加）
 
-- **Task 1（2026-05-26）**：CORS ✅、token ✅；无版本路径 POST 返回 404 `Url not found.`。修正为 `.../admin/openapi/v20260901/metafield_definition.json`。access A/B 待复测；实现暂按 spec（`$app:` 才传 access）。
+- **Task 1（2026-05-26）**：CORS ✅、token ✅；无版本路径 404 → 修正 `v20260901`。复测：A/B 均 200 → access 按模板 `defaults.access` / `fields[].access` 透传，不按 namespace 限制。
 - Task 8 实测：（执行 Task 8 后追加）

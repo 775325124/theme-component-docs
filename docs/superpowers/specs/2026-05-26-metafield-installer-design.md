@@ -56,23 +56,16 @@ Body:
       "owner_resource": "products",
       "type": "single_line_text_field",
       "description": "...?",
-      "access": { "admin": "MERCHANT_READ_WRITE" }  // 仅当 namespace 是 $app: 时
+      "access": { "admin": "MERCHANT_READ_WRITE" }  // 可选，见下
     }
   }
 ```
 
-关于 `access`：官方文档明确「当 `access.admin` 传值时，`namespace` 必须设置为 `$app:{namespace}` 格式」。本项目里现有元字段全部用 `my_fields` 命名空间，按字面规则**不应**也**不能**传 `access`。
+关于 `access`（**2026-05-26 复测结论**）：
 
-但用户原始需求要求「access 默认 MERCHANT_READ_WRITE」，文档描述也可能保守。Plan Task 1 的探测页会**同时跑两组用例**——A 不传 access、B 强制传 `MERCHANT_READ_WRITE`——按实测决定最终规则：
-
-- 若 A 200、B 400 → 保留下面的「`$app:` 才传 access」规则。
-- 若 A 200、B 200 → 放宽：按模板里写的 access 透传，不按 namespace 拦截。
-- 若 A 400（意外）→ 再做一轮探测。
-
-下面是按官方文档的默认假设（Task 1 实测后可能调整）：
-
-- 若 `namespace` 以 `$app:` 开头 → 透传模板里指定的 `access.admin`（默认 `MERCHANT_READ_WRITE`）
-- 否则 → **不发送** `access` 字段
+- 在 `my_fields` + `v20260901` 路径下，不传 access 与传 `MERCHANT_READ_WRITE` **均可 200**；响应体里 `access` 可能仍为 `null`。
+- 实现规则：**按模板透传**——`defaults.access.admin` 为各插件默认值，单字段可用 `fields[].access` 覆盖；**不按 namespace 限制**。
+- `product-variant-picker2` 模板默认：`defaults.access.admin = MERCHANT_READ_WRITE`。
 
 ### CORS 风险与 fallback
 
