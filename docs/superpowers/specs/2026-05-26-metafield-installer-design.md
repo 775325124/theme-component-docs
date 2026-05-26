@@ -43,7 +43,7 @@ const accessToken = await adminApi.ready();
 Shopline Admin REST API 原生接口：
 
 ```
-POST https://{handle}.myshopline.com/admin/openapi/metafield_definition.json
+POST https://{handle}.myshopline.com/admin/openapi/v20260901/metafield_definition.json
 Headers:
   Content-Type: application/json; charset=utf-8
   Authorization: Bearer {token}

@@ -4,7 +4,7 @@
 
 **Goal:** 在 VitePress 文档站点加一个「一键安装元字段」交互：输入店铺 handle，浏览器内拿 token 后批量调用 Shopline Open API 创建元字段定义；模板用仓库 JSON 维护。
 
-**Architecture:** 仓库里维护 `apps/metafield-installers/<id>.json` 模板；运行时 VitePress 全局注册一个按钮组件，点击弹窗 → 用 SystemJS 动态加载 Giikin `adminApi` 模块 → `ready()` 拿 token → 循环 fetch `https://{handle}.myshopline.com/admin/openapi/metafield_definition.json` 写入 5 个字段。CORS 失败时降级为「复制脚本到 Shopline 后台 console 跑」。
+**Architecture:** 仓库里维护 `apps/metafield-installers/<id>.json` 模板；运行时 VitePress 全局注册一个按钮组件，点击弹窗 → 用 SystemJS 动态加载 Giikin `adminApi` 模块 → `ready()` 拿 token → 循环 fetch `https://{handle}.myshopline.com/admin/openapi/v20260901/metafield_definition.json` 写入字段。CORS 失败时降级为「复制脚本到 Shopline 后台 console 跑」。
 
 **Tech Stack:** VitePress 1.6 / Vue 3 (Composition API) / TypeScript / SystemJS (CDN) / Shopline Admin REST API。零新增 npm 依赖。
 
@@ -1254,5 +1254,5 @@ git commit -m "docs(apps): 一键安装器实测记录与排错指南"
 
 ## 执行日志（执行时追加）
 
-- Task 1 决策：（执行 Task 1 后追加）
+- **Task 1（2026-05-26）**：CORS ✅、token ✅；无版本路径 POST 返回 404 `Url not found.`。修正为 `.../admin/openapi/v20260901/metafield_definition.json`。access A/B 待复测；实现暂按 spec（`$app:` 才传 access）。
 - Task 8 实测：（执行 Task 8 后追加）
