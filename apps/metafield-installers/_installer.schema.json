@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Metafield Installer Template",
+  "type": "object",
+  "required": ["id", "title", "fields"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,49}$",
+      "description": "与 apps/<slug>.md 同名"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "docHref": {
+      "type": "string",
+      "description": "可选；按钮上的「查看文档」链接，默认 /apps/<id>"
+    },
+    "defaults": {
+      "type": "object",
+      "properties": {
+        "namespace": { "type": "string", "default": "my_fields" },
+        "ownerResource": {
+          "type": "string",
+          "enum": ["products", "variants", "collections", "customers", "orders", "pages", "blogs", "articles", "shop"],
+          "default": "products"
+        }
+      },
+      "additionalProperties": false
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["key", "name", "type"],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{3,30}$"
+          },
+          "name": { "type": "string", "minLength": 1, "maxLength": 255 },
+          "namespace": {
+            "type": "string",
+            "description": "可选；不填则用 defaults.namespace"
+          },
+          "ownerResource": {
+            "type": "string",
+            "description": "可选；不填则用 defaults.ownerResource"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "single_line_text_field",
+              "list.single_line_text_field",
+              "multi_line_text_field",
+              "color", "list.color",
+              "date", "list.date",
+              "date_time", "list.date_time",
+              "url", "list.url",
+              "file_reference", "list.file_reference",
+              "json",
+              "weight", "list.weight",
+              "volume", "list.volume",
+              "dimension", "list.dimension",
+              "number_integer", "list.number_integer",
+              "number_decimal", "list.number_decimal",
+              "rating", "list.rating",
+              "page_reference", "list.page_reference",
+              "product_reference", "list.product_reference",
+              "variant_reference", "list.variant_reference",
+              "collection_reference", "list.collection_reference",
+              "boolean",
+              "money"
+            ]
+          },
+          "description": { "type": "string", "maxLength": 255 },
+          "required": { "type": "boolean", "default": false },
+          "access": {
+            "type": "object",
+            "description": "仅在 namespace 以 $app: 开头时有效",
+            "properties": {
+              "admin": {
+                "type": "string",
+                "enum": ["MERCHANT_READ_WRITE", "MERCHANT_READ", "PUBLIC_READ", "PRIVATE", "NONE"]
+              }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
