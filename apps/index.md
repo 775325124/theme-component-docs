@@ -1,3 +1,7 @@
+<script setup>
+import { withBase } from 'vitepress'
+</script>
+
 # Shopline 应用插件
 
 本板块记录 **Shopline 店铺应用 / 自定义脚本** 的配置方法，与「主题分区组件」分开维护。
@@ -22,7 +26,7 @@
 
 <article class="apps-plugin-card">
   <a class="apps-plugin-card__thumb" href="product-variant-picker2" aria-label="查看 product-variant-picker2 文档">
-    ![product-variant-picker2 预览](/screenshots/product-variant-picker2.png)
+    <img :src="withBase('/screenshots/product-variant-picker2.png')" alt="product-variant-picker2 预览" loading="lazy" />
   </a>
   <div class="apps-plugin-card__main">
     <header class="apps-plugin-card__header">
@@ -49,7 +53,7 @@
 ## 怎么加新插件文档
 
 1. 在 `apps/` 下新建 `<slug>.md`（与脚本目录名一致，kebab-case）
-2. 在本页「插件索引」的 `.apps-plugin-index` 里复制一张 `.apps-plugin-card` 并改内容（链接用**相对路径**如 `your-plugin`，不要用 `/apps/...`，否则 GitHub Pages 会 404）
+2. 在本页「插件索引」的 `.apps-plugin-index` 里复制一张 `.apps-plugin-card` 并改内容（链接用**相对路径**如 `your-plugin`；缩略图用 `<img :src="withBase('/screenshots/xxx.png')" />`，依赖文件顶部已引入的 `withBase`）
 3. 在 `.vitepress/config.mts` 的「Shopline 应用插件」分组追加侧栏项
 4. `npm run build` → `git push`
 
