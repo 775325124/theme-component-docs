@@ -47,4 +47,4 @@ VS Code / Cursor 打开 JSON 时会自动按 `_installer.schema.json` 提示。
 
 ## 实测记录
 
-- **Task 1（2026-05-26）**：CORS ✅、token ✅；无版本路径 POST 返回 404 `Url not found.`。修正为 `.../admin/openapi/v20260901/metafield_definition.json`。access A/B 待复测；实现暂按 spec（`$app:` 才传 access）。
+- **2026-05-26（Task 1 探测）**：CORS ✅、token ✅。无版本路径 `POST .../admin/openapi/metafield_definition.json` 返回 **404** `Url not found.`；修正为 `.../admin/openapi/v20260901/metafield_definition.json` 后可用。access A/B 待复测；实现暂按 spec（`$app:` 才传 access）。
