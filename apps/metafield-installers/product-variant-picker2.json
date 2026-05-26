@@ -11,21 +11,21 @@
   "fields": [
     {
       "key": "customDiscountTitle",
-      "name": "弹层优惠档位标题",
+      "name": "自定义购买标题",
       "type": "single_line_text_field",
       "description": "弹层各档标题，英文逗号分隔。例：2足購入で,3足購入で,4足購入で",
       "required": true
     },
     {
       "key": "custom_discount_variant_num",
-      "name": "优惠档位购买件数",
+      "name": "自定义购买件数",
       "type": "single_line_text_field",
       "description": "各档满几件，与 Shopline 折扣件数一致，逗号分隔。例：2,3,4",
       "required": true
     },
     {
       "key": "custom_discount_badge_labels",
-      "name": "弹层优惠档位角标",
+      "name": "自定义购买优惠角标",
       "type": "single_line_text_field",
       "description": "各档角标文案，逗号分隔，可留空。例：最划算,お得,",
       "required": false
