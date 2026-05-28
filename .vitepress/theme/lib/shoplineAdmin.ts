@@ -83,6 +83,9 @@ export async function loadSystemJs(): Promise<void> {
 
 export async function getAccessToken(handle: string): Promise<string> {
   await loadSystemJs()
+  // adminApi 内部用固定 sessionKey 缓存 token，不区分 handle，
+  // 必须在每次换 handle 前清除，否则会复用上一个店铺的 token
+  try { sessionStorage.removeItem('GiikinApp001AccessToken') } catch {}
   const mod = await window.System!.import('adminApi')
   const AdminApi = mod.adminApi
   if (!AdminApi) throw new Error('adminApi 模块未导出 adminApi')
