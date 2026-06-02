@@ -1,7 +1,7 @@
 # 产品排行榜（Tab 切换 + 排名徽章）
 
 ::: info 适用范围
-**Shopline 3.x（Sline）** · 主题：kenpogen
+**Shopline 3.x（Sline）** · 主题：kenpogen · sosove-jp
 :::
 
 **适合做什么：** 把多个「分类合集」做成顶部 Tab，点哪个 Tab 显示哪一类的商品；每张商品卡左上角带 1、2、3…的排名徽章，前三名颜色加重；底部可放「查看更多」按钮跳到对应合集页。

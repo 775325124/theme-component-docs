@@ -33,7 +33,7 @@ import { withBase } from 'vitepress'
       <h3 class="apps-plugin-card__name">
         <a href="product-variant-picker2">product-variant-picker2</a>
       </h3>
-      <p class="apps-plugin-card__tagline">弹层式多件规格选择 + 分层优惠，加购 / 结账</p>
+      <p class="apps-plugin-card__tagline">商品详情自定义购买选择器组件：多件规格 + 阶梯优惠，加购 / 结账</p>
     </header>
     <dl class="apps-plugin-card__meta">
       <div class="apps-plugin-card__meta-row">

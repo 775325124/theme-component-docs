@@ -13,7 +13,7 @@
       "key": "customDiscountTitle",
       "name": "自定义购买标题",
       "type": "single_line_text_field",
-      "description": "弹层各档标题，英文逗号分隔。例：2足購入で,3足購入で,4足購入で",
+      "description": "购买选择器组件各档标题，英文逗号分隔。例：2足購入で,3足購入で,4足購入で",
       "required": true
     },
     {

@@ -9,6 +9,20 @@
 ## 2026-05
 
 <div class="changelog-item">
+<time>2026-05-29</time>
+
+**应用插件**：[自定义购买选择器](/apps/product-variant-picker2) 补充 Shopline 平台配置钉钉文档链接；统一称为「应用组件」，不再使用「弹层」表述。
+
+</div>
+
+<div class="changelog-item">
+<time>2026-05-29</time>
+
+**组件移植**：产品排行榜 section 同步至 **sosove-jp** 主题；[文档适用范围](/components/product-ranking) 已更新。
+
+</div>
+
+<div class="changelog-item">
 <time>2026-05-19</time>
 
 **应用插件**：[自定义购买选择器](/apps/product-variant-picker2) 补充「须配合 Shopline 自动折扣、元字段与后台折扣逐档对齐」说明及对照表。

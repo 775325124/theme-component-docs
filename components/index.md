@@ -17,7 +17,7 @@
 | ![kol](/screenshots/kol-recommend.png) | **人气视频** | 达人视频墙：封面、短视频、KOL、进商品 | Shopline 3.x · Sline | daramiyo、kenpogen | [打开](/components/kol-recommend) |
 | ![tcr](/screenshots/text-columns-renman.png) | **红人模块** | 多列图文卡片 | Shopline 3.x · Sline | 同上 | [打开](/components/text-columns-renman) |
 | ![tcr2](/screenshots/text-columns-renman2.png) | **红人模块(视频)** | 横滑轮播 + 图/视频 | Shopline 3.x · Sline | 同上 | [打开](/components/text-columns-renman2) |
-| ![pr](/screenshots/product-ranking.png) | **产品排行榜** | 顶部 Tab + 各类合集商品 + 排名徽章；支持滚动置顶 Tab | Shopline 3.x · Sline | kenpogen | [打开](/components/product-ranking) |
+| ![pr](/screenshots/product-ranking.png) | **产品排行榜** | 顶部 Tab + 各类合集商品 + 排名徽章；支持滚动置顶 Tab | Shopline 3.x · Sline | kenpogen、sosove-jp | [打开](/components/product-ranking) |
 | ![ht](/screenshots/hot-tags.png) | **Hot tags** | 热门标签按钮组，可配标题与悬停色 | Shopline 3.x · Sline | kenpogen | [打开](/components/hot-tags) |
 | ![nt](/screenshots/notice.png) | **通知消息** | 公告列表：绑定自定义页面 + 发布日期 | Shopline 3.x · Sline | kenpogen | [打开](/components/notice) |
 | ![bs](/screenshots/best-sellers.png) | **热销商品** | Tab + 横滑商品卡，支持合集或手动选品，营销角标 | Shopline 3.x · Sline | kenpogen | [打开](/components/best-sellers) |
