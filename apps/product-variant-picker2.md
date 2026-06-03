@@ -20,7 +20,7 @@
 ::: tip Shopline 平台配置文档
 在 Shopline 后台的**应用安装、应用块挂载、平台侧参数**等步骤，请以团队维护的钉钉文档为准（与本文「元字段 + 折扣对齐」互补）：
 
-**[Shopline 平台配置说明（钉钉文档）](https://alidocs.dingtalk.com/i/nodes/QG53mjyd80RDxAA3SQyQP34wV6zbX04v?corpId=ding795387c883ef25ff35c2f4657eb6378f&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im)**
+**[Shopline 平台配置说明（钉钉文档）](https://alidocs.dingtalk.com/i/nodes/lyQod3RxJK3X744ks44m3ejdJkb4Mw9r?corpId=ding795387c883ef25ff35c2f4657eb6378f&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im)**
 
 本文侧重：组件做什么、元字段怎么填、折扣如何与元字段逐档对齐、顾客怎么用、常见疑问。
 :::
@@ -184,7 +184,7 @@ flowchart LR
 
 ## 顾客侧操作说明
 
-1. 点击商品页上由应用绑定的购买按钮（具体挂载方式见 [Shopline 平台配置说明（钉钉文档）](https://alidocs.dingtalk.com/i/nodes/QG53mjyd80RDxAA3SQyQP34wV6zbX04v?corpId=ding795387c883ef25ff35c2f4657eb6378f&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im)）。
+1. 点击商品页上由应用绑定的购买按钮（具体挂载方式见 [Shopline 平台配置说明（钉钉文档）](https://alidocs.dingtalk.com/i/nodes/lyQod3RxJK3X744ks44m3ejdJkb4Mw9r?corpId=ding795387c883ef25ff35c2f4657eb6378f&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im)）。
 2. 在购买选择器组件中选择优惠档位（单选）。
 3. 在展开区域为**每一件**选择规格（下拉框带图）。
 4. 点击「加入购物车」或「立即结账」。
@@ -204,5 +204,5 @@ flowchart LR
 ## 相关文档
 
 - [应用插件总览](/apps/)
-- [Shopline 平台配置说明（钉钉文档）](https://alidocs.dingtalk.com/i/nodes/QG53mjyd80RDxAA3SQyQP34wV6zbX04v?corpId=ding795387c883ef25ff35c2f4657eb6378f&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im)
+- [Shopline 平台配置说明（钉钉文档）](https://alidocs.dingtalk.com/i/nodes/lyQod3RxJK3X744ks44m3ejdJkb4Mw9r?corpId=ding795387c883ef25ff35c2f4657eb6378f&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im)
 - 主题内「单件规格」区块：使用主题自带规格选择器，见商品详情模板配置
