@@ -11,6 +11,13 @@
 <div class="changelog-item">
 <time>2026-05-29</time>
 
+**应用插件**：[自定义购买选择器](/apps/product-variant-picker2) 页顶新增「运营同学看这里」醒目引导条，链至 Shopline 平台配置钉钉文档。
+
+</div>
+
+<div class="changelog-item">
+<time>2026-05-29</time>
+
 **应用插件**：[自定义购买选择器](/apps/product-variant-picker2) 补充 Shopline 平台配置钉钉文档链接；统一称为「应用组件」，不再使用「弹层」表述。
 
 </div>

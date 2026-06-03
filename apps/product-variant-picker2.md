@@ -4,6 +4,28 @@
 **Shopline 应用插件** · 脚本：`product-variant-picker2` · 仓库：shopline-app-script
 :::
 
+<div class="ops-callout" role="region" aria-label="运营同学必读">
+  <div class="ops-callout__header">
+    <span class="ops-callout__eyebrow" aria-hidden="true">👋</span>
+    <span class="ops-callout__badge">运营同学看这里</span>
+  </div>
+  <p class="ops-callout__lead">
+    <strong>Shopline 后台怎么装应用、怎么挂到商品页、平台里要点哪里</strong>——请优先打开下方钉钉文档；本页其余章节是<strong>元字段填写</strong>与<strong>折扣和元字段对齐</strong>，技术实施也会用到。
+  </p>
+  <div class="ops-callout__split">
+    <p class="ops-callout__hint">建议收藏钉钉文档；改折扣或上架新商品时，先对照文档再回来填元字段。</p>
+    <a
+      class="ops-callout__cta"
+      href="https://alidocs.dingtalk.com/i/nodes/lyQod3RxJK3X744ks44m3ejdJkb4Mw9r?corpId=ding795387c883ef25ff35c2f4657eb6378f&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="ops-callout__cta-label">打开 Shopline 平台配置文档</span>
+      <span class="ops-callout__cta-arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+</div>
+
 ## 这是什么组件
 
 **product-variant-picker2** 是挂在商品详情页上的 **Shopline 应用组件**（由应用脚本渲染，不是主题里的「添加分区」那种 section）。顾客通过页面上的购买入口打开**自定义购买选择器组件**，先选优惠档位（如买 2 件 / 3 件），再为每一档分别选规格，最后加入购物车或立即结账。
@@ -16,14 +38,6 @@
 | 典型场景 | 单件选色选码 | 多件组合、阶梯优惠 |
 | 展示与文案 | 主题设置 | **商品元字段**（各档标题、角标、展示价） |
 | 结账减价 | 常规价格 / 店铺折扣 | **须配合 Shopline 后台多件折扣**（与元字段一致） |
-
-::: tip Shopline 平台配置文档
-在 Shopline 后台的**应用安装、应用块挂载、平台侧参数**等步骤，请以团队维护的钉钉文档为准（与本文「元字段 + 折扣对齐」互补）：
-
-**[Shopline 平台配置说明（钉钉文档）](https://alidocs.dingtalk.com/i/nodes/lyQod3RxJK3X744ks44m3ejdJkb4Mw9r?corpId=ding795387c883ef25ff35c2f4657eb6378f&utm_medium=im_card&iframeQuery=utm_medium%3Dim_card%26utm_source%3Dim&utm_scene=person_space&utm_source=im)**
-
-本文侧重：组件做什么、元字段怎么填、折扣如何与元字段逐档对齐、顾客怎么用、常见疑问。
-:::
 
 ![自定义购买选择器组件前台效果](/screenshots/product-variant-picker2.png)
 
