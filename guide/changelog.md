@@ -6,6 +6,15 @@
 绝大多数变更由 Cursor Agent Skill 自动生成草稿；如果你的改动是手写的，**请回来这里追加一条**。
 :::
 
+## 2026-06
+
+<div class="changelog-item">
+<time>2026-06-04</time>
+
+**新增组件文档**：[客户评价](/components/customer-reviews)（Shopify · pettena-jp，`customer-reviews.liquid`）。
+
+</div>
+
 ## 2026-05
 
 <div class="changelog-item">

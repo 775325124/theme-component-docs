@@ -154,6 +154,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '婴儿车对比表', link: '/components/stroller-compare-table' },
+          { text: '客户评价', link: '/components/customer-reviews' },
         ],
       },
       {

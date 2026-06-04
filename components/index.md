@@ -32,6 +32,7 @@
 | ![sp](/screenshots/sticky-purchase.png) | **移动端悬浮购买条** | 商品详情页底部固定加购 / 结账（手机端） | Shopline 3.x · Sline | kenpogen | [打开](/components/sticky-purchase) |
 | ![ssc](/screenshots/staff-style-coordination.png) | **人员穿搭展示** | 员工/KOL 穿搭卡片，支持网格和轮播两种布局 | Shopline 3.x · Sline | sosove-jp | [打开](/components/staff-style-coordination) |
 | ![sct](/screenshots/stroller-compare-table.png) | **婴儿车对比表** | 多款婴儿车参数横向对比，数据来自元对象 | Shopify · Liquid | pettena-jp | [打开](/components/stroller-compare-table) |
+| ![cr](/screenshots/customer-reviews.png) | **客户评价** | 买家好评横滑卡片：星级、短评、进商品页 | Shopify · Liquid | pettena-jp | [打开](/components/customer-reviews) |
 
 > **Shopline 2.x（Handlebars）主题** 目前没有专属自定义组件登记。如需把 Sline / Liquid 组件移植过去，请参考 [主题版本与模板语言差异 → 跨语言迁移注意事项](/guide/version-difference#跨语言迁移注意事项)。
 
