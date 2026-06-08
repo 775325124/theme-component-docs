@@ -11,6 +11,13 @@
 <div class="changelog-item">
 <time>2026-06-04</time>
 
+**代码片段**：[修改 DOM 文字](/snippets/update-dom-text) — `whenBodyReady` 修复 body 未就绪报错；更新 `lockText` / `updateText` 与结账支付完整示例。
+
+</div>
+
+<div class="changelog-item">
+<time>2026-06-04</time>
+
 **新增组件文档**：[客户评价](/components/customer-reviews)（Shopify · pettena-jp，`customer-reviews.liquid`）。
 
 </div>
