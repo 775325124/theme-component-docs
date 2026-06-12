@@ -9,6 +9,13 @@
 ## 2026-06
 
 <div class="changelog-item">
+<time>2026-06-12</time>
+
+**新增代码片段（Shopline 3.0）**：[详情页视频自动播放](/snippets/video-autoplay)、[结账页加购埋点](/snippets/checkout-addtocart-tracking)、[选中规格外框高亮](/snippets/selected-variant-border)、[轮播默认显示第 N 张](/snippets/carousel-default-slide)、[多件捆绑默认选最后一项](/snippets/bundle-default-last)。
+
+</div>
+
+<div class="changelog-item">
 <time>2026-06-04</time>
 
 **代码片段**：[修改 DOM 文字](/snippets/update-dom-text) — `whenBodyReady` 修复 body 未就绪报错；更新 `lockText` / `updateText` 与结账支付完整示例。

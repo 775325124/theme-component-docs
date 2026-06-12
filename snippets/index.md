@@ -9,6 +9,11 @@
 | 场景 | 一句话用途 | 平台 / 语言 | 首次客户/主题 | 详情 |
 |------|-----------|-----------|-------------|------|
 | **修改 DOM 文字** | 改元素文案；含 `lockText` 锁定版防被脚本改回 | 全平台 JS | 通用 | [打开](/snippets/update-dom-text) |
+| **详情页视频自动播放** | `<video>` 静音循环自动播放，兼容懒加载 / 移动端 | Shopline 3.x · Sline | 通用 | [打开](/snippets/video-autoplay) |
+| **结账页加购埋点** | checkout 触发 `addToCart`，上报追踪像素 | Shopline 3.x · Sline | 通用 | [打开](/snippets/checkout-addtocart-tracking) |
+| **选中规格外框高亮** | 选中 SKU 外框红色加粗 3px，hover 高亮 | Shopline 3.x · Sline（CSS） | 通用 | [打开](/snippets/selected-variant-border) |
+| **轮播默认显示第 N 张** | 进页面自动切到第 N 张缩略图（视频也生效） | Shopline 3.x · Sline | 通用 | [打开](/snippets/carousel-default-slide) |
+| **多件捆绑默认选最后一项** | 批量加购促销默认选中优惠最大那档 | Shopline 3.x · Sline | 通用 | [打开](/snippets/bundle-default-last) |
 
 ## 怎么加新片段
 

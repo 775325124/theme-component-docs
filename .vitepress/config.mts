@@ -179,6 +179,11 @@ export default defineConfig({
         items: [
           { text: '片段总览', link: '/snippets/' },
           { text: '修改 DOM 文字', link: '/snippets/update-dom-text' },
+          { text: '详情页视频自动播放', link: '/snippets/video-autoplay' },
+          { text: '结账页加购埋点', link: '/snippets/checkout-addtocart-tracking' },
+          { text: '选中规格外框高亮', link: '/snippets/selected-variant-border' },
+          { text: '轮播默认显示第 N 张', link: '/snippets/carousel-default-slide' },
+          { text: '多件捆绑默认选最后一项', link: '/snippets/bundle-default-last' },
           { text: '新片段模板', link: '/snippets/template' },
         ],
       },
