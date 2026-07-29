@@ -9,6 +9,13 @@
 ## 2026-06
 
 <div class="changelog-item">
+<time>2026-06-26</time>
+
+**新增代码片段（Shopline 2.0）**：[评论日期自动更新（多列）](/snippets/comment-date-auto-update) — 商品评论插件近 7 天加权日期、分页与插件回写对抗。
+
+</div>
+
+<div class="changelog-item">
 <time>2026-06-12</time>
 
 **新增代码片段（Shopline 3.0）**：[详情页视频自动播放](/snippets/video-autoplay)、[结账页加购埋点](/snippets/checkout-addtocart-tracking)、[选中规格外框高亮](/snippets/selected-variant-border)、[轮播默认显示第 N 张](/snippets/carousel-default-slide)、[多件捆绑默认选最后一项](/snippets/bundle-default-last)。

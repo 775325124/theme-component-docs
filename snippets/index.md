@@ -14,6 +14,7 @@
 | **选中规格外框高亮** | 选中 SKU 外框红色加粗 3px，hover 高亮 | Shopline 3.x · Sline（CSS） | 通用 | [打开](/snippets/selected-variant-border) |
 | **轮播默认显示第 N 张** | 进页面自动切到第 N 张缩略图（视频也生效） | Shopline 3.x · Sline | 通用 | [打开](/snippets/carousel-default-slide) |
 | **多件捆绑默认选最后一项** | 批量加购促销默认选中优惠最大那档 | Shopline 3.x · Sline | 通用 | [打开](/snippets/bundle-default-last) |
+| **评论日期自动更新（多列）** | 评论插件日期按近 7 天加权刷新，支持分页 / 多列 | Shopline 2.x · Handlebars | 通用 | [打开](/snippets/comment-date-auto-update) |
 
 ## 怎么加新片段
 

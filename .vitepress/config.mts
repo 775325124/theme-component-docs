@@ -161,7 +161,7 @@ export default defineConfig({
         text: 'Shopline 2.x · Handlebars 主题',
         collapsed: true,
         items: [
-          { text: '（预留分组）', link: '/guide/version-difference' },
+          { text: '评论日期自动更新（多列）', link: '/snippets/comment-date-auto-update' },
         ],
       },
       {
@@ -184,6 +184,7 @@ export default defineConfig({
           { text: '选中规格外框高亮', link: '/snippets/selected-variant-border' },
           { text: '轮播默认显示第 N 张', link: '/snippets/carousel-default-slide' },
           { text: '多件捆绑默认选最后一项', link: '/snippets/bundle-default-last' },
+          { text: '评论日期自动更新（多列）', link: '/snippets/comment-date-auto-update' },
           { text: '新片段模板', link: '/snippets/template' },
         ],
       },
