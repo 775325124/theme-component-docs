@@ -12,8 +12,8 @@
     "check": "npm run lint:md && npm run build"
   },
   "devDependencies": {
-    "markdownlint-cli2": "^0.13.0",
-    "sharp": "^0.33.5",
+    "markdownlint-cli2": "^0.23.2",
+    "sharp": "^0.35.3",
     "vitepress": "^1.6.3"
   }
 }
