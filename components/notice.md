@@ -1,12 +1,6 @@
 # 通知消息
 
-::: info 适用范围
-**Shopline 3.x（Sline）** · 主题：kenpogen
-:::
-
 **适合做什么：** 公告 / お知らせ列表页：顶部标题 + 副标题，下面按日期列出已发布的**自定义页面**链接（适合店铺通知、活动说明归档）。
-
-![通知消息前台效果](/screenshots/notice.png)
 
 ## 整段（分区）设置
 
@@ -40,11 +34,3 @@
 
 - 列表顺序与后台块顺序一致，最新的条目通常放在最上面（需手动调整块顺序）。
 - 条目左侧固定显示「お知らせ」标签文案（主题写死，暂不能在后台改）。
-
-## 维护者参考
-
-::: details schema / 代码位置
-
-- **Shopline 3.x（Sline）** — 主题仓库内：`sections/notice/notice.html` + `sections/notice/blocks/notice-item.html`
-- 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
-:::

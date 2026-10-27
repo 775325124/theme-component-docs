@@ -1,12 +1,6 @@
 # 自定义摘要 · 富文本（goods-summary-doc）
 
-::: info 适用范围
-**Shopline 应用插件** · 应用块：`goods-summary-doc-block` · 仓库：shopline-blocks（app01）
-:::
-
 **适合做什么：** 在商品详情页插入一段**富文本摘要**，内容从商品元字段 `my_fields.summary_doc`（富文本类型）读取，支持换行段落和可选的文字横向滚动效果。
-
-![自定义摘要前台效果](/screenshots/goods-summary-doc.png)
 
 ## 前台效果
 

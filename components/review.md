@@ -2,11 +2,6 @@
 
 > 评论展示 section：星级评论卡片横向轮播，支持可选关联商品并在卡片图片上叠加加购弹窗，含桌面/移动端两套布局与底部「更多」按钮。
 
-- 适用主题：kenpogen
-- 平台：shopline-3.x
-- 共用主题：[oakln]
-- 登记日期：2026-07-29
-
 ## 功能说明
 
 - **卡片轮播**：评论以卡片形式横向排列，桌面端每行 2–5 列可配，超出宽度可横向滚动，底部自动生成分页圆点（`review.js` 中的 `<review-carousel>` 自定义元素，图片加载后重算位点）。
@@ -22,7 +17,7 @@
 - 公共 block：`heading`、`subheading`
 - 配色/排版：主题配色变量（`--color-button-*`、`--color-foreground`）、基础排版 class（`body2/4/5`、`title3`）
 
-> 移植到其它 Sline(shopline-3.x) 主题时，确认上述依赖存在；oakln 已随本次一并补齐 `quick-add-modal`。
+> 移植到其它 Shopline 主题时，请确认上述依赖存在。
 
 ## 使用步骤
 

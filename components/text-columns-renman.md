@@ -1,12 +1,6 @@
 # 红人模块（图文多列）
 
-::: info 适用范围
-**Shopline 3.x（Sline）** · 主题：daramiyo · kenpogen
-:::
-
 **适合做什么：** 多张「大图 + 标题 + 可选小图标 + 文字介绍 + 按钮」，电脑上几列排开；手机可以一排多张，或左右滑一张一张看。
-
-![红人模块前台效果](/screenshots/text-columns-renman.png)
 
 ## 整段（分区）设置
 
@@ -39,11 +33,3 @@
 | 图标 | 标题旁边小图（可不填） |
 | 描述 | 正文，支持简单排版 |
 | 按钮文字 / 跳转链接 | 这张卡自己的按钮（没有可不填） |
-
-## 维护者参考
-
-::: details schema / 代码位置
-
-- **Shopline 3.x（Sline）** — 主题仓库内：`sections/text-columns-renman/text-columns-renman.html`（末尾 schema 块）+ `sections/text-columns-renman/blocks/*.html`
-- 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
-:::

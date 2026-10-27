@@ -116,7 +116,6 @@ export default defineConfig({
           { text: '首页', link: '/' },
           { text: '独立仓库全流程', link: '/workflow' },
           { text: '如何把模块加到页面', link: '/guide/common' },
-          { text: '主题版本与模板语言差异', link: '/guide/version-difference' },
         ],
       },
       {
@@ -127,7 +126,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Shopline 3.x · Sline 主题',
+        text: 'Shopline 组件',
         collapsed: false,
         items: [
           { text: '人气视频', link: '/components/kol-recommend' },
@@ -147,18 +146,11 @@ export default defineConfig({
           { text: '产品摘要', link: '/components/product-subtitle' },
           { text: '移动端悬浮购买条', link: '/components/sticky-purchase' },
           { text: '人员穿搭展示', link: '/components/staff-style-coordination' },
+          { text: '评论（Review）', link: '/components/review' },
         ],
       },
       {
-        text: 'Shopify · Liquid 主题（Giipet / pettena-jp）',
-        collapsed: false,
-        items: [
-          { text: '婴儿车对比表', link: '/components/stroller-compare-table' },
-          { text: '客户评价', link: '/components/customer-reviews' },
-        ],
-      },
-      {
-        text: 'Shopline 2.x · Handlebars 主题',
+        text: '代码片段',
         collapsed: true,
         items: [
           { text: '评论日期自动更新（多列）', link: '/snippets/comment-date-auto-update' },

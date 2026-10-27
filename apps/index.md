@@ -1,19 +1,15 @@
-<script setup>
-import { withBase } from 'vitepress'
-</script>
-
 # Shopline 应用插件
 
 本板块记录 **Shopline 店铺应用 / 自定义脚本** 的配置方法，与「主题分区组件」分开维护。
 
 | 区别 | 主题组件（components） | 应用插件（apps） |
 |------|------------------------|------------------|
-| 代码位置 | 主题仓库 `sections/` | [shopline-app-script](https://github.com/) 等脚本仓库，CDN 下发 |
+| 代码位置 | 主题仓库 `sections/` | Shopline 应用脚本仓库，CDN 下发 |
 | 后台入口 | 在线商店 → 主题 → 自定义分区 | Shopline 应用市场 / 已安装应用 + **商品元字段** |
 | 典型配置 | 分区设置、块设置 | **Shopline 自动折扣** + **商品元字段（与折扣一致）** + 应用挂载 |
 
 ::: tip 和主题的关系
-应用脚本挂在商品页或应用块容器里，**不替代**主题自带的规格选择器；常与「多件优惠 / 组合购买」类商品模板（如 `product.sku`）一起使用。
+应用脚本挂在商品页或应用块容器里，**不替代**主题自带的规格选择器；常与「多件优惠 / 组合购买」类商品模板一起使用。
 :::
 
 ::: warning product-variant-picker2 特别注意
@@ -22,71 +18,16 @@ import { withBase } from 'vitepress'
 
 ## 插件索引
 
-<div class="apps-plugin-index">
-
-<article class="apps-plugin-card">
-  <a class="apps-plugin-card__thumb" href="product-variant-picker2" aria-label="查看 product-variant-picker2 文档">
-    <img :src="withBase('/screenshots/product-variant-picker2.png')" alt="product-variant-picker2 预览" loading="lazy" />
-  </a>
-  <div class="apps-plugin-card__main">
-    <header class="apps-plugin-card__header">
-      <h3 class="apps-plugin-card__name">
-        <a href="product-variant-picker2">product-variant-picker2</a>
-      </h3>
-      <p class="apps-plugin-card__tagline">商品详情自定义购买选择器组件：多件规格 + 阶梯优惠，加购 / 结账</p>
-    </header>
-    <dl class="apps-plugin-card__meta">
-      <div class="apps-plugin-card__meta-row">
-        <dt>配置方式</dt>
-        <dd>Shopline 多件折扣 + 元字段同步 + 应用挂载</dd>
-      </div>
-    </dl>
-    <footer class="apps-plugin-card__actions">
-      <a class="apps-plugin-card__link" href="product-variant-picker2">打开文档</a>
-      <MetafieldInstallerButton id="product-variant-picker2" size="sm" label="⚡ 一键安装元字段" />
-    </footer>
-  </div>
-</article>
-
-<article class="apps-plugin-card">
-  <a class="apps-plugin-card__thumb" href="goods-summary-doc" aria-label="查看 goods-summary-doc 文档">
-    <img :src="withBase('/screenshots/goods-summary-doc.png')" alt="自定义摘要预览" loading="lazy" />
-  </a>
-  <div class="apps-plugin-card__main">
-    <header class="apps-plugin-card__header">
-      <h3 class="apps-plugin-card__name">
-        <a href="goods-summary-doc">goods-summary-doc</a>
-      </h3>
-      <p class="apps-plugin-card__tagline">商品详情页富文本摘要，支持换行 + 可选文字滚动</p>
-    </header>
-    <dl class="apps-plugin-card__meta">
-      <div class="apps-plugin-card__meta-row">
-        <dt>配置方式</dt>
-        <dd>商品元字段（富文本）+ 应用块设置</dd>
-      </div>
-    </dl>
-    <footer class="apps-plugin-card__actions">
-      <a class="apps-plugin-card__link" href="goods-summary-doc">打开文档</a>
-      <MetafieldInstallerButton id="goods-summary-doc" size="sm" label="⚡ 一键安装元字段" />
-    </footer>
-  </div>
-</article>
-
-</div>
+| 插件 | 介绍 | 使用 |
+|------|------|------|
+| **product-variant-picker2** | 商品详情自定义购买选择器：多件规格 + 阶梯优惠，加购 / 结账 | [打开文档](/apps/product-variant-picker2) |
+| **goods-summary-doc** | 商品详情页富文本摘要，支持换行 + 可选文字滚动 | [打开文档](/apps/goods-summary-doc) |
 
 ## 怎么加新插件文档
 
 1. 在 `apps/` 下新建 `<slug>.md`（与脚本目录名一致，kebab-case）
-2. 在本页「插件索引」的 `.apps-plugin-index` 里复制一张 `.apps-plugin-card` 并改内容（链接用**相对路径**如 `your-plugin`；缩略图用 `<img :src="withBase('/screenshots/xxx.png')" />`，依赖文件顶部已引入的 `withBase`）
+2. 在本页「插件索引」表格加一行（组件名 / 介绍 / 文档链接）
 3. 在 `.vitepress/config.mts` 的「Shopline 应用插件」分组追加侧栏项
 4. `npm run build` → `git push`
 
 或在 Cursor 中说「新增了 Shopline 应用插件 xxx，更新手册」，由 agent 按上述步骤处理。
-
-## 脚本仓库
-
-| 项目 | 说明 |
-|------|------|
-| **shopline-app-script** | 脚本源码与构建产物；`product-variant-picker2` 对应 `dist/scripts/product-variant-picker2/` |
-| **shopline-blocks** | Shopline 应用块源码；`goods-summary-doc-block` 对应 `app01/theme-app-extension/blocks/` |
-| **CDN** | 线上入口：`https://shopline-scripts-cdn.qgergdv.com/scripts/product-variant-picker2/main.js` |

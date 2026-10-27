@@ -32,7 +32,7 @@
 <div class="changelog-item">
 <time>2026-06-04</time>
 
-**新增组件文档**：[客户评价](/components/customer-reviews)（Shopify · pettena-jp，`customer-reviews.liquid`）。
+**新增组件文档**：客户评价（已下线，本手册仅保留 Shopline）。
 
 </div>
 
@@ -55,7 +55,7 @@
 <div class="changelog-item">
 <time>2026-05-29</time>
 
-**组件移植**：产品排行榜 section 同步至 **sosove-jp** 主题；[文档适用范围](/components/product-ranking) 已更新。
+**组件移植**：产品排行榜 section 同步至 **主题仓库** 主题；[文档适用范围](/components/product-ranking) 已更新。
 
 </div>
 
@@ -69,14 +69,14 @@
 <div class="changelog-item">
 <time>2026-05-19</time>
 
-**组件文档同步（kenpogen schema 更新）**：[产品排行榜](/components/product-ranking)、[红人模块（图文）](/components/text-columns-renman)、[红人模块（视频）](/components/text-columns-renman2) — 标题/副标题字号改为主题 typography 下拉选项说明；新增 [热门标签](/components/hot-tags)、[通知消息](/components/notice) 文档。
+**组件文档同步（schema 更新）**：[产品排行榜](/components/product-ranking)、[红人模块（图文）](/components/text-columns-renman)、[红人模块（视频）](/components/text-columns-renman2) — 标题/副标题字号改为主题 typography 下拉选项说明；新增 [热门标签](/components/hot-tags)、[通知消息](/components/notice) 文档。
 
 </div>
 
 <div class="changelog-item">
 <time>2026-05-19</time>
 
-**kenpogen 组件更新**：[热销商品](/components/best-sellers) 新文档 + 前台截图；[移动端悬浮购买条](/components/sticky-purchase) 商品详情 block 说明。
+**组件更新**：[热销商品](/components/best-sellers) 新文档 + 前台截图；[移动端悬浮购买条](/components/sticky-purchase) 商品详情 block 说明。
 
 </div>
 
@@ -92,8 +92,8 @@
 
 **重要事实修正**：之前把 Shopline 主题统一称为 "Slate 2.x / 3.x"（错——Slate 是 Shopify 工具链术语），且把模板语言归属写反了。本次按 [Shopline 官方文档](https://developer.shopline.com/zh-hans-cn/docs/online-store-3-0-themes/bottle) 全部修正：
 
-- 「Slate 3.x」→ **Shopline 3.x · Sline**（daramiyo / kenpogen / pettena-kr / sosove-jp 用的是 Sline，不是"Handlebars-like"）
-- 「Slate 2.x（Liquid）」→ 这个其实是 **Shopify Liquid**（Giipet），跟 Shopline 不是一回事
+- 「Slate 3.x」→ **Shopline 3.x · Sline**（Shopline 主题 用的是 Sline，不是"Handlebars-like"）
+- 「Slate 2.x（Liquid）」→ 这个其实是 **Shopify Liquid**（主题仓库），跟 Shopline 不是一回事
 - 新增 **Shopline 2.x · Handlebars** 分组占位（目前未使用）
 - 重写 [主题版本与模板语言差异](/guide/version-difference)：现在三栏并排（Sline / Handlebars / Liquid），含官方文档链接和跨语言迁移对照表
 - 侧边栏分组按平台/语言重命名
@@ -120,9 +120,9 @@
 
 新增 / 改写的组件文档：
 
-- [产品排行榜](/components/product-ranking) — Tab 切换 + 排名徽章 + 滚动置顶（kenpogen 新增）
-- [Tab 切换图文](/components/tab-switcher) — 顶部 Tab + 大图 + 3 商品卡（kenpogen 补文档）
-- [图片轮播 Plus](/components/image-swiper-more) — 自定义每屏数量、支持小数（kenpogen 补文档）
+- [产品排行榜](/components/product-ranking) — Tab 切换 + 排名徽章 + 滚动置顶
+- [Tab 切换图文](/components/tab-switcher) — 顶部 Tab + 大图 + 3 商品卡
+- [图片轮播 Plus](/components/image-swiper-more) — 自定义每屏数量、支持小数
 - [人气视频](/components/kol-recommend) / [红人模块（图文）](/components/text-columns-renman) / [红人模块（视频轮播）](/components/text-columns-renman2) — 加版本徽章 + 维护者参考块
 
 </div>
@@ -130,7 +130,7 @@
 <div class="changelog-item">
 <time>2026-05-12（早前）</time>
 
-- 首次将 handbook 从 daramiyo 主题里抽离出来，独立成 GitHub 仓库 `theme-component-docs`
+- 首次将 handbook 从主题仓库抽离出来，独立成 GitHub 仓库 `theme-component-docs`
 - 上线 GitHub Pages 公开访问链接
 - 配齐 Actions 自动部署（push main → 1-2 分钟后更新）
 - 收录最早 3 个组件：人气视频、红人模块（图文）、红人模块（视频轮播）
@@ -147,4 +147,4 @@
 
 ## 想看主题代码改动？
 
-那不在本手册范围。各主题仓库（[kenpogen](https://github.com/...) 等）有自己的 git history。
+那不在本手册范围。各主题仓库（[主题仓库](https://github.com/...) 等）有自己的 git history。

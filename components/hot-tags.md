@@ -1,12 +1,6 @@
 # 热门标签（Hot tags）
 
-::: info 适用范围
-**Shopline 3.x（Sline）** · 主题：kenpogen
-:::
-
 **适合做什么：** 在首页或专题页展示一排可点击的标签按钮，引导顾客进入集合页、搜索页或自定义链接。可配分区标题与标签颜色、字号。
-
-![热门标签前台效果](/screenshots/hot-tags.png)
 
 ## 整段（分区）设置
 
@@ -54,11 +48,3 @@
 - 标签组块 limit 为 1，所有标签都放在同一个组里即可。
 - 悬停颜色与默认颜色对比要够明显，方便顾客识别可点击。
 - 手机端标签较多时，调小「移动端文字大小」并适当减小行/列间距。
-
-## 维护者参考
-
-::: details schema / 代码位置
-
-- **Shopline 3.x（Sline）** — 主题仓库内：`sections/hot-tags/hot-tags.html` + `sections/hot-tags/blocks/*.html`
-- 修 schema 字段后请回来同步本页上方表格里的标签 / 默认值。
-:::

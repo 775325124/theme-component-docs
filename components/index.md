@@ -1,6 +1,6 @@
 # 组件总览
 
-自定义分区一览。点「使用说明」查看后台怎么加、每项怎么填。
+Shopline 自定义分区一览。点「使用说明」查看后台怎么加、每项怎么填。
 
 | 组件 | 介绍 | 使用 |
 |------|------|------|
@@ -21,8 +21,7 @@
 | **产品摘要** | 商品元字段短摘要，支持换行 | [使用说明](/components/product-subtitle) |
 | **移动端悬浮购买条** | 商品详情页底部固定加购 / 结账（手机端） | [使用说明](/components/sticky-purchase) |
 | **人员穿搭展示** | 员工/KOL 穿搭卡片，支持网格和轮播两种布局 | [使用说明](/components/staff-style-coordination) |
-| **婴儿车对比表** | 多款婴儿车参数横向对比，数据来自元对象 | [使用说明](/components/stroller-compare-table) |
-| **客户评价** | 买家好评横滑卡片：星级、短评、进商品页 | [使用说明](/components/customer-reviews) |
+| **评论（Review）** | 星级评论卡片横向轮播，可关联商品加购 | [使用说明](/components/review) |
 
 ---
 
